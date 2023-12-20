@@ -100,7 +100,9 @@ class Json:
             return list(self.json_dict_or_list.values())
         return []
 
-    def get(self, __key: int | str | tuple, default: any = None) -> str | int | tuple | dict | list:
+    def get(
+        self, __key: int | str | tuple, default: any = None
+    ) -> str | int | tuple | dict | list:
         if isinstance(self.json_dict_or_list, dict):
             return self.json_dict_or_list.get(__key, default)
 
@@ -135,3 +137,21 @@ class Json:
             str | int | tuple: The items in the `json_dict_or_list` attribute.
         """
         yield from self.json_dict_or_list
+
+
+class Translate:
+    def __init__(self, config: dict) -> None:
+        self.config = config
+
+    def get_translate_item(self, item: str) -> str:
+        return self.config["translation"].get(item, 'Не выбран урок')
+
+    def get_translate_book(self, item: str, book_name: str, class_: str, oge: bool = False) -> str:
+        item = self.get_translate_item(item)
+        return (
+            self.config["oge"][item][book_name]["file"]
+            if oge
+            else self.config["classes"][class_][
+                item
+            ][book_name]["file"]
+        )

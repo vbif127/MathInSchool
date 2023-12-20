@@ -2,17 +2,18 @@ import re
 
 from PySide6.QtWidgets import QTreeWidgetItem
 
-from src.support.active import ActiveItem
+from src.support.active import ActiveItem, NotifierOfChangeActiveItem
 from src.useui import UseUi, Ui
 
 
 class HandleSelection(UseUi):
 
-    def __init__(self, ui: Ui):
+    def __init__(self, ui: Ui, active_item: ActiveItem, notifier: NotifierOfChangeActiveItem):
         super().__init__(ui)
-        self.active_item: ActiveItem = None
+        self.active_item: ActiveItem = active_item
+        self.notifier = notifier
 
-    def __call__(self, item: QTreeWidgetItem):
+    def handle_selection_item(self, item: QTreeWidgetItem):
         if item.parent() is None or item.parent().parent() is None:
             return
 
@@ -20,7 +21,9 @@ class HandleSelection(UseUi):
             return
 
         self.active_item = self.make_active_item(item)
-        self.change = True
+
+        self.notifier.change_item(self.active_item)
+        self.notifier.notify()
 
     @staticmethod
     def make_active_item(item: QTreeWidgetItem) -> ActiveItem:
@@ -31,13 +34,4 @@ class HandleSelection(UseUi):
         )
 
     def connect(self):
-        self.ui.z.itemClicked.connect(self.__call__)
-
-
-class WorkWithActiveItem(UseUi):
-
-    def __init__(self, ui: Ui):
-        super().__init__(ui)
-        self.selected_item: ActiveItem =
-
-    def
+        self.ui.treeWidget.itemClicked.connect(self.handle_selection_item)

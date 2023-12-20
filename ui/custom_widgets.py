@@ -3,6 +3,7 @@ import os
 import requests
 from PySide6.QtWidgets import QLabel, QHBoxLayout, QWidget, QPlainTextEdit
 
+from src.api import Api
 from src.settings import SERVER, TMP, BASE_PATH
 from src.support.work_with_files import PathToFile
 from src.types import Book
@@ -14,6 +15,7 @@ class BookWidgetItem(QWidget):
 
         self.vbl = QHBoxLayout()
         self.book = book
+        self.api = Api()
 
         self.book_image_label = self._create_book_image_label()
 
@@ -37,21 +39,22 @@ class BookWidgetItem(QWidget):
         book_image_label.setMinimumHeight(230)
         return book_image_label
 
-    def show_image(self, user_id: int) -> None:
-        if self.book.path is None:
+    def show_image(self) -> None:
+        if self.book.image is None:
             path = PathToFile(self.book.image)
-            req = requests.get(f"{SERVER}/file/{user_id}", json={"path": path.path})
-            if req.status_code == 200:
-                name = os.path.join(TMP, f'{id(path.path)}.{str(path).split(".")[-1]}').replace("\\", "/")
-                if not os.path.exists(os.path.dirname(name)):
-                    os.makedirs(os.path.dirname(name))
-                with open(name, "wb") as f:
-                    f.write(req.content)
-                self.book.path = f"border-image: url({name});"
-                self.book_image_label.setStyleSheet(f"border-image: url({name});")
-            else:
-                self.book.path = f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/")
-                self.book_image_label.setStyleSheet(
-                    f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/"))
+            req = self.api.get_file(path.path)
+            print(req)
+            # if req.status_code == 200:
+            #     name = os.path.join(TMP, f'{id(path.path)}.{str(path).split(".")[-1]}').replace("\\", "/")
+            #     if not os.path.exists(os.path.dirname(name)):
+            #         os.makedirs(os.path.dirname(name))
+            #     with open(name, "wb") as f:
+            #         f.write(req.content)
+            #     self.book.path = f"border-image: url({name});"
+            #     self.book_image_label.setStyleSheet(f"border-image: url({name});")
+            # else:
+            #     self.book.path = f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/")
+            #     self.book_image_label.setStyleSheet(
+            #         f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/"))
         else:
-            self.book_image_label.setStyleSheet(self.book.path)
+            self.book_image_label.setStyleSheet(self.book.image)
