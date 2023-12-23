@@ -1,58 +1,32 @@
 from abc import abstractmethod
-from typing import Any
 
 from pydantic import BaseModel
 
-from src.storage.main import StorageActiveItem
-from src.useui import UseUi, Ui
+from src.storage.rollback import RollBackSelectItem
+from src.storage.save import SaveHistorySelection
+from src.storage.storage import StorageHistorySelection
+from src.support.active.base import Notifier, WorkWithAny
+from src.types import EventsTypes
+from src.useui import Ui
 
 
-class ActiveItem(BaseModel):
+class SelectionItem(BaseModel):
     class_: int
     text: str
     reinforce: bool
 
 
-class WorkWithAny(UseUi):
-    @abstractmethod
-    def update(self, item: Any) -> None:
-        ...
-
-
-class WorkWithActiveItem(WorkWithAny):
+class WorkWithSelectionItem(WorkWithAny):
     def __init__(self, ui: Ui):
         super().__init__(ui)
-        self.active_item: ActiveItem = None
+        self.active_item: SelectionItem = None
 
     @abstractmethod
-    def update(self, item: ActiveItem):
-        self.change = False
+    def update(self, item: SelectionItem):
         self.active_item = item
 
 
-class Notifier:
-    __instance = None
-
-    observers = []
-    _item = None
-
-    def __new__(cls, *args, **kwargs):
-        if cls.__instance is None:
-            cls.__instance = super().__new__(cls)
-        return cls.__instance
-
-    def notify(self):
-        for observer in self.observers:
-            observer.update(self._item)
-
-    def add_observer(self, observer):
-        self.observers.append(observer)
-
-    def change_item(self, item: Any):
-        self._item = item
-
-
-class NotifierOfChangeActiveItem(Notifier):
+class NotifierOfChangeSelectionItem(Notifier):
     __instance = None
 
     observers = []
@@ -65,7 +39,12 @@ class NotifierOfChangeActiveItem(Notifier):
             cls.__instance = super().__new__(cls)
         return cls.__instance
 
-    def set_values(self, *observers, storage: StorageActiveItem, item: ActiveItem):
+    def add_observer(self, observer: WorkWithSelectionItem):
+        if not isinstance(observer, WorkWithSelectionItem):
+            raise TypeError("The class must inherit from WorkWithSelectionItem")
+        self.observers.append(observer)
+
+    def set_values(self, *observers, storage: StorageHistorySelection, item: SelectionItem):
         super().__init__(*observers, item=item)
         self.storage = storage
         self._item = item
@@ -74,13 +53,17 @@ class NotifierOfChangeActiveItem(Notifier):
         for observer in self.observers:
             if self.change:
                 observer.update(self._item)
+            # TODO: Доделать систему сохранения истории состояний
 
-    def change_item(self, item: ActiveItem):
+    def change_item(self, item: SelectionItem):
         self.change = True
         self._item = item
-        self.storage.add_save(item)
-
-    # TODO: 1. Сохранять старое состояние предмета(ActiveItem) в хранилище
+        self.storage.add_save(SaveHistorySelection(
+            change_type=EventsTypes.SELECT_ITEM,
+            roll_back_event=RollBackSelectItem(),
+            date={}
+        ))
+    # TODO: 1. Сохранять старое состояние предмета(SelectionItem) в хранилище
     #       2. Придумать как восстановить(Достать из хранилища) старое состояние при возникновении ошибки
     #       3. Переименовать treeWidget
     #       4. Организовать появления учебников в списках
@@ -90,13 +73,14 @@ class NotifierOfChangeActiveItem(Notifier):
     #       8. Подключить Ruff
 
 
-def add_observer_to_notifier(cls):
+def add_observer_to_notifier_active_item(cls) -> WorkWithSelectionItem:
     def _add_observer_to_notifier(*args, **kwargs):
-        notifier = NotifierOfChangeActiveItem()
+        notifier = NotifierOfChangeSelectionItem()
         cls_ = cls(*args, **kwargs)
-        if not isinstance(cls_, WorkWithActiveItem):
-            raise TypeError("The class must inherit from WorkWithActiveItem")
+        if not isinstance(cls_, WorkWithSelectionItem):
+            raise TypeError("The class must inherit from WorkWithSelectionItem")
         notifier.add_observer(cls_)
 
         return cls_
+
     return _add_observer_to_notifier

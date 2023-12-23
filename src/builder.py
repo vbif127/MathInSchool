@@ -1,7 +1,7 @@
-from src.books.shows import ShowBooks
-from src.select.select_item import HandleSelection
-from src.storage.main import StorageActiveItem
-from src.support.active import NotifierOfChangeActiveItem
+from src.item.books.shows import ShowBooks
+from src.item.select_item import HandleSelection
+from src.storage.storage import StorageHistorySelection
+from src.support.active.item import NotifierOfChangeSelectionItem
 from src.useui import UseUi, Ui
 
 
@@ -10,8 +10,8 @@ class Builder(UseUi):
         super().__init__(ui)
         self.active_item = None
 
-        self.storage = StorageActiveItem()
-        self.notifier = NotifierOfChangeActiveItem()
+        self.storage = StorageHistorySelection()
+        self.notifier = NotifierOfChangeSelectionItem()
 
         self.notifier.set_values(item=self.active_item, storage=self.storage)
 
@@ -20,7 +20,6 @@ class Builder(UseUi):
             ui,
             self.active_item,
             self.notifier,
-            self.show_books
         )
 
     def build(self):

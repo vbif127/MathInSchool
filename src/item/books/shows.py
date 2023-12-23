@@ -1,22 +1,21 @@
-from itertools import cycle
-
 from PySide6.QtWidgets import QListWidgetItem
 
 from src.settings import CONFIG
 from src.support.other import Translate
-from src.types import Book
+from src.item.books.type import Book
 from src.useui import Ui
-from src.support.active import (WorkWithActiveItem, ActiveItem,
-                                NotifierOfChangeActiveItem, add_observer_to_notifier)
+from src.support.active.item import (WorkWithSelectionItem, SelectionItem,
+                                     NotifierOfChangeSelectionItem,
+                                     add_observer_to_notifier_active_item)
 from ui.custom_widgets import BookWidgetItem
 
 
-@add_observer_to_notifier
-class ShowBooks(WorkWithActiveItem):
+@add_observer_to_notifier_active_item
+class ShowBooks(WorkWithSelectionItem):
 
-    def __init__(self, ui: Ui, active_item: ActiveItem, notifier: NotifierOfChangeActiveItem):
+    def __init__(self, ui: Ui, active_item: SelectionItem, notifier: NotifierOfChangeSelectionItem):
         super().__init__(ui)
-        self.active_item: ActiveItem = active_item
+        self.active_item: SelectionItem = active_item
         self.notifier = notifier
         self.translator = Translate(CONFIG)
         self.books = None
@@ -27,6 +26,7 @@ class ShowBooks(WorkWithActiveItem):
 
         def map_book(book_tuple: tuple[str, dict]):
             book = Book(
+                self.active_item,
                 book_tuple[0],
                 **book_tuple[1],
             )
@@ -40,19 +40,15 @@ class ShowBooks(WorkWithActiveItem):
     def show(self):
         self.books = self.generate()
 
-        widgets = self.ui.columnLW1, self.ui.columnLW2, self.ui.columnLW3
-        [column_widget.clear() for column_widget in widgets]
-
-        for column_widget, book in zip(cycle(widgets), self.books):
-
+        for book in self.books:
             book_widget = BookWidgetItem(book)
             book_widget.show_image()
-            item = QListWidgetItem(column_widget)
+            item = QListWidgetItem(self.ui.list_booksLW)
             item.setSizeHint(book_widget.sizeHint())
 
-            column_widget.addItem(item)
-            column_widget.setItemWidget(item, book_widget)
+            self.ui.list_booksLW.addItem(item)
+            self.ui.list_booksLW.setItemWidget(item, book_widget)
 
-    def update(self, item: ActiveItem):
+    def update(self, item: SelectionItem):
         self.active_item = item
         self.show()

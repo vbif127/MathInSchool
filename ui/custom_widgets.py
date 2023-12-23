@@ -1,19 +1,20 @@
 import os
 
 import requests
-from PySide6.QtWidgets import QLabel, QHBoxLayout, QWidget, QPlainTextEdit
+from PySide6.QtWidgets import QLabel, QWidget, QPlainTextEdit, QVBoxLayout
 
 from src.api import Api
-from src.settings import SERVER, TMP, BASE_PATH
+from src.settings import BASE_PATH
 from src.support.work_with_files import PathToFile
-from src.types import Book
+from src.item.books.type import Book
 
 
 class BookWidgetItem(QWidget):
     def __init__(self, book: Book) -> None:
         super().__init__()
+        self.setMaximumWidth(230)
 
-        self.vbl = QHBoxLayout()
+        self.vbl = QVBoxLayout()
         self.book = book
         self.api = Api()
 
@@ -21,8 +22,8 @@ class BookWidgetItem(QWidget):
 
         self.description_book = self._create_description_book_widget(book)
 
-        self.vbl.addWidget(self.book_image_label, 35)
-        self.vbl.addWidget(self.description_book, 65)
+        self.vbl.addWidget(self.book_image_label, 60)
+        self.vbl.addWidget(self.description_book, 40)
 
         self.setLayout(self.vbl)
 
@@ -30,7 +31,7 @@ class BookWidgetItem(QWidget):
     def _create_description_book_widget(book: Book) -> QPlainTextEdit:
         description_book = QPlainTextEdit()
         description_book.setReadOnly(True)
-        description_book.setPlainText(book.description)
+        description_book.setPlainText(book.description.replace("\n\n", "\n"))
         return description_book
 
     @staticmethod
@@ -40,21 +41,19 @@ class BookWidgetItem(QWidget):
         return book_image_label
 
     def show_image(self) -> None:
-        if self.book.image is None:
+        if self.book.image is not None:
             path = PathToFile(self.book.image)
-            req = self.api.get_file(path.path)
-            print(req)
-            # if req.status_code == 200:
-            #     name = os.path.join(TMP, f'{id(path.path)}.{str(path).split(".")[-1]}').replace("\\", "/")
-            #     if not os.path.exists(os.path.dirname(name)):
-            #         os.makedirs(os.path.dirname(name))
-            #     with open(name, "wb") as f:
-            #         f.write(req.content)
-            #     self.book.path = f"border-image: url({name});"
-            #     self.book_image_label.setStyleSheet(f"border-image: url({name});")
-            # else:
-            #     self.book.path = f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/")
-            #     self.book_image_label.setStyleSheet(
-            #         f"border-image: url('{BASE_PATH}/img/default.png');".replace("\\", "/"))
+
+            try:
+                file = self.api.get_file(path.path)[0].replace("\\", "/")
+
+            except requests.HTTPError:
+                default_img = (os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png')
+                               .replace("\\", "/"))
+                self.book_image_label.setStyleSheet(f"border-image: url('{default_img}');")
+
+                return
+
+            self.book_image_label.setStyleSheet(f"border-image: url({file});")
         else:
             self.book_image_label.setStyleSheet(self.book.image)

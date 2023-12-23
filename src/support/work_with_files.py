@@ -15,7 +15,7 @@ class PathToFile:
         self.path = path
 
     def fullpath(self) -> str:
-        abspath = os.path.abspath(self.path)
+        abspath = os.path.realpath(self.path)
         dir_, name = os.path.dirname(abspath), os.path.basename(abspath)
         return os.path.join(dir_, name)
 
@@ -50,4 +50,4 @@ def install_and_extract_files(response: requests.Response) -> list[str]:
     with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
         zip_ref.extractall(temp_dir)
 
-    return os.listdir(list(map(join_path_to_file(temp_dir), os.listdir(temp_dir))))
+    return list(map(join_path_to_file(temp_dir), os.listdir(temp_dir)))

@@ -1,5 +1,8 @@
 from dataclasses import dataclass, field
 
+from src.storage.rollback import RollBack
+from src.types import EventsTypes
+
 
 @dataclass
 class Save:
@@ -9,5 +12,9 @@ class Save:
         self.sid = str(id(self))
 
 
-class SaveActiveItem(Save):
-    ...
+@dataclass
+class SaveHistorySelection(Save):
+    change_type: EventsTypes
+    roll_back_event: RollBack
+    date: dict
+

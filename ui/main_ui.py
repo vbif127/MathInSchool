@@ -15,16 +15,17 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QHeaderView,
-    QLabel, QListWidget, QListWidgetItem, QMainWindow,
-    QPushButton, QSizePolicy, QSpacerItem, QStackedWidget,
-    QTreeWidget, QTreeWidgetItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QFrame, QHBoxLayout,
+    QHeaderView, QLabel, QListView, QListWidget,
+    QListWidgetItem, QMainWindow, QPushButton, QSizePolicy,
+    QSpacerItem, QStackedWidget, QTreeWidget, QTreeWidgetItem,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1092, 888)
+        MainWindow.resize(1172, 888)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"font: 16pt \"Segoe UI\";")
@@ -111,39 +112,29 @@ class Ui_MainWindow(object):
         self.main.setMinimumSize(QSize(0, 800))
         self.stackedWidget = QStackedWidget(self.main)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setGeometry(QRect(260, 0, 811, 781))
+        self.stackedWidget.setGeometry(QRect(260, 0, 881, 781))
         self.page = QWidget()
         self.page.setObjectName(u"page")
-        self.libF = QFrame(self.page)
-        self.libF.setObjectName(u"libF")
-        self.libF.setGeometry(QRect(10, 30, 791, 751))
-        self.libF.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"border: 0px")
-        self.horizontalLayout_2 = QHBoxLayout(self.libF)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.columnLW1 = QListWidget(self.libF)
-        self.columnLW1.setObjectName(u"columnLW1")
-
-        self.horizontalLayout_2.addWidget(self.columnLW1)
-
-        self.columnLW2 = QListWidget(self.libF)
-        self.columnLW2.setObjectName(u"columnLW2")
-        self.columnLW2.setStyleSheet(u"")
-
-        self.horizontalLayout_2.addWidget(self.columnLW2)
-
-        self.columnLW3 = QListWidget(self.libF)
-        self.columnLW3.setObjectName(u"columnLW3")
-
-        self.horizontalLayout_2.addWidget(self.columnLW3)
-
         self.itemL = QLabel(self.page)
         self.itemL.setObjectName(u"itemL")
         self.itemL.setGeometry(QRect(10, -5, 161, 31))
         self.label_4 = QLabel(self.page)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(560, -5, 131, 31))
+        self.list_booksLW = QListWidget(self.page)
+        self.list_booksLW.setObjectName(u"list_booksLW")
+        self.list_booksLW.setGeometry(QRect(0, 30, 871, 751))
+        self.list_booksLW.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.list_booksLW.setAutoScroll(False)
+        self.list_booksLW.setVerticalScrollMode(QAbstractItemView.ScrollPerPixel)
+        self.list_booksLW.setHorizontalScrollMode(QAbstractItemView.ScrollPerItem)
+        self.list_booksLW.setMovement(QListView.Static)
+        self.list_booksLW.setFlow(QListView.LeftToRight)
+        self.list_booksLW.setProperty("isWrapping", True)
+        self.list_booksLW.setViewMode(QListView.IconMode)
+        self.list_booksLW.setUniformItemSizes(True)
+        self.list_booksLW.setBatchSize(3)
+        self.list_booksLW.setWordWrap(True)
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
@@ -199,7 +190,7 @@ class Ui_MainWindow(object):
         QTreeWidgetItem(__qtreewidgetitem19)
         QTreeWidgetItem(__qtreewidgetitem19)
         self.treeWidget.setObjectName(u"treeWidget")
-        self.treeWidget.setGeometry(QRect(0, 0, 256, 781))
+        self.treeWidget.setGeometry(QRect(5, 0, 251, 781))
         self.treeWidget.header().setVisible(False)
 
         self.verticalLayout_3.addWidget(self.main)

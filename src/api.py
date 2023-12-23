@@ -1,7 +1,7 @@
 import requests
 
 from src.settings import SERVER, ID, CONFIG
-from src.support.active import ActiveItem
+from src.support.active.item import SelectionItem
 from src.support.other import Json, Translate
 from src.support.work_with_files import PathToFile, install_and_extract_files
 
@@ -31,7 +31,7 @@ class Api:
         response.raise_for_status()
         return install_and_extract_files(response)
 
-    def get_json_book(self, active_item: ActiveItem, book_identifier: str, is_oge: bool = False) -> Json:
+    def get_json_book(self, active_item: SelectionItem, book_identifier: str, is_oge: bool = False) -> Json:
 
         translated_book_name, translated_item = self.get_translated(
             active_item,
@@ -47,7 +47,7 @@ class Api:
         return Json.loads(response.text)
 
     def get_translated(
-            self, active_item: ActiveItem,
+            self, active_item: SelectionItem,
             book_identifier: str
     ) -> tuple[str, str]:
 
