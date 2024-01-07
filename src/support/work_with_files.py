@@ -2,7 +2,7 @@ import os
 import random
 import string
 import zipfile
-from typing import Callable
+from collections.abc import Callable
 
 import requests
 

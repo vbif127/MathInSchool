@@ -1,26 +1,47 @@
+from src.item.books.content.select import HandlersContentSelectionConnector
+from src.item.books.select_book import HandleSelectionBook
 from src.item.books.shows import ShowBooks
-from src.item.select_item import HandleSelection
+from src.item.books.type import Book
+from src.item.select_item import HandleSelectionItem
 from src.storage.storage import StorageHistorySelection
-from src.support.active.item import NotifierOfChangeSelectionItem
-from src.useui import UseUi, Ui
+from src.support.active.book import NotifierOfChangeSelectionBook
+from src.support.active.item import NotifierOfChangeSelectionItem, SelectionItem
+from src.useui import Ui, UseUi
 
 
 class Builder(UseUi):
-    def __init__(self, ui: Ui):
+    def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
-        self.active_item = None
+        self.selected_item: SelectionItem | None = None
+        self.book: Book | None = None
+
+        self.books: list[Book] = []
 
         self.storage = StorageHistorySelection()
-        self.notifier = NotifierOfChangeSelectionItem()
 
-        self.notifier.set_values(item=self.active_item, storage=self.storage)
+        self.selected_item_notifier = NotifierOfChangeSelectionItem()
+        self.selected_book_notifier = NotifierOfChangeSelectionBook()
 
-        self.show_books = ShowBooks(ui, self.active_item, self.notifier)
-        self.select_item = HandleSelection(
+        self.selected_item_notifier.set_values(item=self.selected_item, storage=self.storage)
+        self.selected_book_notifier.set_values(book=self.book, storage=self.storage)
+
+        self.show_books = ShowBooks(ui, self.selected_item,
+                                    self.selected_item_notifier, self.books)
+
+        self.handle_selection_item = HandleSelectionItem(
             ui,
-            self.active_item,
-            self.notifier,
+            self.selected_item,
+            self.selected_item_notifier,
+        )
+        self.handle_selection_book = HandleSelectionBook(
+            self.ui,
+            self.book,
+            self.selected_book_notifier,
         )
 
-    def build(self):
-        self.select_item.connect()
+        self.handlers_content_selection_connector = HandlersContentSelectionConnector(ui)
+
+    def build(self) -> None:
+        self.handle_selection_item.connect()
+        self.handle_selection_book.connect()
+        self.handlers_content_selection_connector.connect()

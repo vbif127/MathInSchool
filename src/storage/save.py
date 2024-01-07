@@ -8,7 +8,7 @@ from src.types import EventsTypes
 class Save:
     sid: str = field(init=False)
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         self.sid = str(id(self))
 
 

@@ -2,20 +2,24 @@ import re
 
 from PySide6.QtWidgets import QTreeWidgetItem
 
-from src.support.active.item import SelectionItem, NotifierOfChangeSelectionItem
-from src.useui import UseUi, Ui
+from src.support.active.item import NotifierOfChangeSelectionItem, SelectionItem
+from src.useui import Ui, UseUi
 
 
-class HandleSelection(UseUi):
+class NotSelectionItemError(Exception):
+    pass
 
-    def __init__(self, ui: Ui, active_item: SelectionItem, notifier: NotifierOfChangeSelectionItem):
+
+class HandleSelectionItem(UseUi):
+
+    def __init__(self, ui: Ui, selection_item: SelectionItem | None, notifier: NotifierOfChangeSelectionItem) -> None:
         super().__init__(ui)
-        self.active_item: SelectionItem = active_item
+        self.selection_item = selection_item
         self.notifier = notifier
 
-        self.last_item: QTreeWidgetItem = None
+        self.last_item: QTreeWidgetItem | None = None
 
-    def handle_selection_item(self, item: QTreeWidgetItem):
+    def handle_selection_item(self, item: QTreeWidgetItem) -> None:
         if self.last_item == item:
             return
 
@@ -27,9 +31,9 @@ class HandleSelection(UseUi):
         if not re.findall(r"\d*", item.parent().text(0)):
             return
 
-        self.active_item = self.make_active_item(item)
+        self.selection_item = self.make_active_item(item)
 
-        self.notifier.change_item(self.active_item)
+        self.notifier.change_item(self.selection_item)
         self.notifier.notify()
 
     @staticmethod
@@ -37,8 +41,8 @@ class HandleSelection(UseUi):
         return SelectionItem(
             class_=re.findall(r"\d*", item.parent().parent().text(0))[0],
             text=item.parent().text(0),
-            reinforce=bool(item.parent().indexOfChild(item))
+            reinforce=bool(item.parent().indexOfChild(item)),
         )
 
-    def connect(self):
+    def connect(self) -> None:
         self.ui.treeWidget.itemClicked.connect(self.handle_selection_item)

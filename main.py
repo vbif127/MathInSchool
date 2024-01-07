@@ -1,10 +1,11 @@
 import sys
 
 from PySide6.QtWidgets import QApplication
+
 from app import MathInSchool
 
 
-def main():
+def main() -> None:
     app = QApplication(sys.argv)
     window = MathInSchool()
     window.show()

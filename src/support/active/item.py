@@ -17,13 +17,13 @@ class SelectionItem(BaseModel):
 
 
 class WorkWithSelectionItem(WorkWithAny):
-    def __init__(self, ui: Ui):
+    def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
-        self.active_item: SelectionItem = None
+        self.selection_item: SelectionItem | None = None
 
     @abstractmethod
-    def update(self, item: SelectionItem):
-        self.active_item = item
+    def update(self, item: SelectionItem) -> None:
+        self.selection_item = item
 
 
 class NotifierOfChangeSelectionItem(Notifier):
@@ -34,34 +34,34 @@ class NotifierOfChangeSelectionItem(Notifier):
     _item = None
     change: bool = False
 
-    def __new__(cls, *args, **kwargs):
+    def __new__(cls, *args, **kwargs):  # noqa: ANN204
         if cls.__instance is None:
             cls.__instance = super().__new__(cls)
         return cls.__instance
 
-    def add_observer(self, observer: WorkWithSelectionItem):
+    def add_observer(self, observer: WorkWithSelectionItem) -> None:  # type: ignore
         if not isinstance(observer, WorkWithSelectionItem):
             raise TypeError("The class must inherit from WorkWithSelectionItem")
         self.observers.append(observer)
 
-    def set_values(self, *observers, storage: StorageHistorySelection, item: SelectionItem):
-        super().__init__(*observers, item=item)
+    def set_values(self, *observers, storage: StorageHistorySelection, item: SelectionItem | None) -> None:
+        self.observers = list(observers)
         self.storage = storage
         self._item = item
 
-    def notify(self):
+    def notify(self) -> None:
         for observer in self.observers:
             if self.change:
                 observer.update(self._item)
             # TODO: Доделать систему сохранения истории состояний
 
-    def change_item(self, item: SelectionItem):
+    def change_item(self, item: SelectionItem) -> None:
+        super().change_item(item)
         self.change = True
-        self._item = item
         self.storage.add_save(SaveHistorySelection(
             change_type=EventsTypes.SELECT_ITEM,
             roll_back_event=RollBackSelectItem(),
-            date={}
+            date={},
         ))
     # TODO: 1. Сохранять старое состояние предмета(SelectionItem) в хранилище
     #       2. Придумать как восстановить(Достать из хранилища) старое состояние при возникновении ошибки
@@ -73,8 +73,8 @@ class NotifierOfChangeSelectionItem(Notifier):
     #       8. Подключить Ruff
 
 
-def add_observer_to_notifier_active_item(cls) -> WorkWithSelectionItem:
-    def _add_observer_to_notifier(*args, **kwargs):
+def add_observer_to_notifier_selection_item(cls):  # noqa: ANN001, ANN201
+    def _add_observer_to_notifier_selection_item(*args, **kwargs) -> WorkWithSelectionItem:
         notifier = NotifierOfChangeSelectionItem()
         cls_ = cls(*args, **kwargs)
         if not isinstance(cls_, WorkWithSelectionItem):
@@ -83,4 +83,4 @@ def add_observer_to_notifier_active_item(cls) -> WorkWithSelectionItem:
 
         return cls_
 
-    return _add_observer_to_notifier
+    return _add_observer_to_notifier_selection_item

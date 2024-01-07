@@ -1,12 +1,12 @@
 from abc import abstractmethod
 
-from src.storage.save import SaveHistorySelection, Save
+from src.storage.save import Save, SaveHistorySelection
 
 
 class Storage:
 
     @abstractmethod
-    def add_save(self, save: Save):
+    def add_save(self, save: Save) -> None:
         ...
 
     @abstractmethod
@@ -17,7 +17,7 @@ class Storage:
 
 class StorageHistorySelection(Storage):
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.saves: dict[str, SaveHistorySelection] = {}
 
     def add_save(self, save: SaveHistorySelection) -> None:

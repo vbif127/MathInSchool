@@ -1,11 +1,6 @@
-import os
-
-import requests
-from PySide6.QtWidgets import QLabel, QWidget, QPlainTextEdit, QVBoxLayout
+from PySide6.QtWidgets import QLabel, QPlainTextEdit, QVBoxLayout, QWidget
 
 from src.api import Api
-from src.settings import BASE_PATH
-from src.support.work_with_files import PathToFile
 from src.item.books.type import Book
 
 
@@ -31,7 +26,7 @@ class BookWidgetItem(QWidget):
     def _create_description_book_widget(book: Book) -> QPlainTextEdit:
         description_book = QPlainTextEdit()
         description_book.setReadOnly(True)
-        description_book.setPlainText(book.description.replace("\n\n", "\n"))
+        description_book.setPlainText(book.description)
         return description_book
 
     @staticmethod
@@ -41,19 +36,5 @@ class BookWidgetItem(QWidget):
         return book_image_label
 
     def show_image(self) -> None:
-        if self.book.image is not None:
-            path = PathToFile(self.book.image)
+        self.book_image_label.setStyleSheet(f"border-image: url('{self.book.image}');")
 
-            try:
-                file = self.api.get_file(path.path)[0].replace("\\", "/")
-
-            except requests.HTTPError:
-                default_img = (os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png')
-                               .replace("\\", "/"))
-                self.book_image_label.setStyleSheet(f"border-image: url('{default_img}');")
-
-                return
-
-            self.book_image_label.setStyleSheet(f"border-image: url({file});")
-        else:
-            self.book_image_label.setStyleSheet(self.book.image)

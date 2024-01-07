@@ -1,7 +1,6 @@
 import os
 
 import requests
-
 from dotenv import dotenv_values
 
 env = dotenv_values(".env")
@@ -9,6 +8,8 @@ env = dotenv_values(".env")
 ID = env.get("ID")
 SERVER = env.get("SERVER")
 BASE_PATH = os.path.join(os.path.dirname(__file__), "..")
-TMP = env.get("TMP", os.getenv("TMP"))
+TMP: str = env.get("TMP", os.getenv("TMP"))
+SPLIT_PARAGRAPH_SYMBOL = env.get("SPLIT_PARAGRAPH_SYMBOL")
+NOT_SELECTION_ITEM = "Not selection item"
 
 CONFIG = requests.get(f"{SERVER}/config").json()

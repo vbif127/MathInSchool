@@ -1,18 +1,18 @@
+from typing_extensions import override
+
 from src.item.books.type import Book
 from src.storage.rollback import RollBackSelectionBook
 from src.storage.save import SaveHistorySelection
 from src.storage.storage import StorageHistorySelection
+from src.support.active.base import Notifier, WorkWithAny
 from src.types import EventsTypes
 from src.useui import Ui
 
-from src.support.active.base import WorkWithAny, Notifier
-
 
 class WorkWithSelectionBook(WorkWithAny):
-    def __init__(self, ui: Ui, notifier: Notifier):
+    def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
-        self.notifier = notifier
-        self.book = None
+        self.book: Book | None = None
 
     def update(self, book: Book) -> None:
         self.book = book
@@ -22,8 +22,8 @@ class NotifierOfChangeSelectionBook(Notifier):
     __instance = None
 
     observers = []
-    storage = None
-    _book = None
+    storage: StorageHistorySelection | None = None
+    _book: Book | None = None
     change: bool = False
 
     def __new__(cls, *args, **kwargs):
@@ -31,24 +31,43 @@ class NotifierOfChangeSelectionBook(Notifier):
             cls.__instance = super().__new__(cls)
         return cls.__instance
 
-    def set_values(self, *observers, storage: StorageHistorySelection, book: Book):
+    def set_values(self, *observers, storage: StorageHistorySelection, book: Book | None) -> None:
         super().__init__(*observers, item=book)
         self.storage = storage
         self._book = book
 
-    def add_observer(self, observer: WorkWithSelectionBook):
+    @override
+    def add_observer(self, observer: WorkWithSelectionBook) -> None:
         if not isinstance(observer, WorkWithSelectionBook):
             raise TypeError("The class must inherit from WorkWithSelectionItem")
         self.observers.append(observer)
 
-    def notify(self):
-        if self.change:
-            self.storage.add_save(SaveHistorySelection(
-                change_type=EventsTypes.SELECT_BOOK,
-                roll_back_event=RollBackSelectionBook(),
-                date={}
-            ))
+    def notify(self) -> None:
+        if self.storage is None:
+            raise ValueError("Storage is not set")
 
-    def change_item(self, item: Book):
+        for observer in self.observers:
+            if self.change:
+                self.storage.add_save(SaveHistorySelection(
+                    change_type=EventsTypes.SELECT_BOOK,
+                    roll_back_event=RollBackSelectionBook(),
+                    date={},
+                ))
+                observer.update(self._book)
+
+    def change_item(self, item: Book) -> None:
         self._book = item
         self.change = True
+
+
+def add_observer_to_notifier_selection_book(cls):  # noqa: ANN001, ANN201
+    def _add_observer_to_notifier_selection_book(*args, **kwargs) -> WorkWithSelectionBook:
+        notifier = NotifierOfChangeSelectionBook()
+        cls_ = cls(*args, **kwargs)
+        if not isinstance(cls_, WorkWithSelectionBook):
+            raise TypeError("The class must inherit from WorkWithSelectionItem")
+        notifier.add_observer(cls_)
+
+        return cls_
+
+    return _add_observer_to_notifier_selection_book

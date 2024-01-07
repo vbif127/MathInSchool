@@ -1,4 +1,15 @@
+import os
+import random
+import string
+from tkinter import messagebox
 from typing import Any
+
+import requests
+from requests import RequestException
+
+from src.support.my_iter import MyIter
+from src.support.work_with_files import install_and_extract_files
+from ui.web_view.base import View
 
 
 def batched(lst: list, batch_size: int) -> list[list]:
@@ -15,14 +26,14 @@ def is_int(value: Any) -> bool:
 class Json:
     import json as __json
 
-    def __init__(self, json_str: str = None, **json_dict_or_list) -> None:
+    def __init__(self, json_str: str | None = None, **json_dict_or_list) -> None:
         if json_dict_or_list is None:
             json_dict_or_list = {}
 
         self.json_dict_or_list: dict = json_dict_or_list
-        self.json_str: str = json_str
+        self.json_str: str | None = json_str
 
-    def loads(self, json_str: str = None) -> None | dict[str] | list[any]:
+    def loads(self, json_str: str | None = None) -> dict:
         """Convert a JSON string to a dictionary or a list.
 
         Parameters
@@ -46,7 +57,7 @@ class Json:
 
         return self.json_dict_or_list
 
-    def dumps(self, json_dict: dict | list = None) -> str:
+    def dumps(self, json_dict: dict | list | None = None) -> str:
         """Converts a dictionary or list to a JSON string representation.
 
         Args:
@@ -68,7 +79,7 @@ class Json:
 
         return self.json_str
 
-    def items(self) -> list:
+    def items(self):  # noqa: ANN201
         """Return a list of key-value pairs from the JSON dictionary or list.
 
         Returns
@@ -80,7 +91,7 @@ class Json:
             return list(self.json_dict_or_list.items())
         return []
 
-    def keys(self) -> list:
+    def keys(self):  # noqa: ANN201
         """Returns a list of keys in the json_dict_or_list attribute.
 
         :return: A list of keys in the json_dict_or_list attribute.
@@ -90,7 +101,7 @@ class Json:
             return list(self.json_dict_or_list.keys())
         return []
 
-    def values(self) -> list:
+    def values(self):  # noqa: ANN201
         """Return the values of the JSON dictionary or list.
 
         :return: A list of values from the JSON dictionary or list.
@@ -100,9 +111,9 @@ class Json:
             return list(self.json_dict_or_list.values())
         return []
 
-    def get(
-        self, __key: int | str | tuple, default: any = None
-    ) -> str | int | tuple | dict | list:
+    def get(  # noqa: ANN201
+            self, __key: int | str | tuple, default: Any = None,  # noqa: ANN401
+    ):
         if isinstance(self.json_dict_or_list, dict):
             return self.json_dict_or_list.get(__key, default)
 
@@ -115,7 +126,7 @@ class Json:
         return self.json_str or f"json string = {self.json_str}" \
                                 f" dict_or_list = {self.json_dict_or_list}"
 
-    def __getitem__(self, value: str | int | tuple) -> any:
+    def __getitem__(self, key: str):  # noqa: ANN201
         """Get the item with the specified value from the JSON dictionary or list.
 
         Parameters
@@ -126,10 +137,12 @@ class Json:
         -------
             Any: The item with the specified value if found, otherwise None.
         """
-        if value in self.json_dict_or_list:
-            return self.json_dict_or_list.get(value)
+        return self.json_dict_or_list.get(key)
 
-    def __iter__(self) -> str | int | tuple:
+    def __setitem__(self, key, value) -> None:  # noqa: ANN201 ANN001
+        self.json_dict_or_list[key] = value
+
+    def __iter__(self):  # noqa: ANN201
         """Iterates over the `json_dict_or_list` attribute and yields each item.
 
         Yields
@@ -146,12 +159,33 @@ class Translate:
     def get_translate_item(self, item: str) -> str:
         return self.config["translation"].get(item, 'Не выбран урок')
 
-    def get_translate_book(self, item: str, book_name: str, class_: str, oge: bool = False) -> str:
+    def get_translate_book(self, item: str, book_name: str, class_: int | str, oge: bool = False) -> str:
         item = self.get_translate_item(item)
         return (
             self.config["oge"][item][book_name]["file"]
             if oge
-            else self.config["classes"][class_][
+            else self.config["classes"][f"{class_}"][
                 item
             ][book_name]["file"]
         )
+
+
+def web_view(self: object, url: MyIter) -> None:
+    url = url()
+    if url.endswith(".mp4"):
+        install_and_open_video(url)
+    else:
+        view = "".join(random.sample(string.ascii_letters, 20))
+        setattr(self, view, View(url))
+        getattr(self, view).show()
+
+
+def install_and_open_video(url: str) -> None:
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        for file in install_and_extract_files(response):
+            os.startfile(file)
+
+    except RequestException as e:
+        messagebox.showerror("Error", f"Не получилось загрузить файл {e}")
