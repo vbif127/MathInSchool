@@ -9,10 +9,14 @@ from src.support.other import Json
 from src.support.work_with_files import PathToFile
 
 
+class NotSelectionBookError(Exception):
+    pass
+
+
 @dataclass(frozen=True)
 class Number:
-    queri: str
-    answer: str
+    path_to_question: str
+    path_to_answers: str
 
 
 @dataclass
@@ -27,8 +31,8 @@ class Content:
 
     def __convert_numbers(self, numbers: dict[str, str]) -> dict[str, Number]:
         return {
-            name: Number(queri, self.json["result"][name])
-            for name, queri in numbers.items()
+            question: Number(path_to_question, self.json["result"][question])
+            for question, path_to_question in numbers.items()
         }
 
     def __getitem__(self, item: str):
@@ -75,9 +79,9 @@ class Book:
 
         image = self.api.get_file(path.path)
         if not image:
-            self.__image = os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png')
+            self.__image = os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png').replace("\\", "/")
         else:
-            self.__image = self.__image[0].replace("\\", "/")
+            self.__image = image[0].replace("\\", "/")
 
     @property  # type: ignore
     def description(self) -> str:

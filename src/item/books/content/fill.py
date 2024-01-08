@@ -4,6 +4,8 @@ from collections.abc import Iterable
 
 from PySide6.QtWidgets import QPushButton, QTreeWidgetItem
 
+from src.item.books.type import NotSelectionBookError
+from src.settings import NOT_SELECTION_BOOK
 from src.support.active.book import WorkWithSelectionBook, add_observer_to_notifier_selection_book
 from src.useui import Ui
 
@@ -96,7 +98,8 @@ class ParagraphFiller(Filler):
     def __call__(self) -> None:
         super().__call__()
         if not self.book:
-            raise Not
+            raise NotSelectionBookError(NOT_SELECTION_BOOK)
+        self.ui.answersCB.setEnabled(False)
 
         built_paragraphs = self.builder.build(self.book.content.paragraphs)
         for paragraph in built_paragraphs:
@@ -110,6 +113,10 @@ class NumberFiller(Filler):
 
     def __call__(self) -> None:
         super().__call__()
+        if not self.book:
+            raise NotSelectionBookError(NOT_SELECTION_BOOK)
+        self.ui.answersCB.setEnabled(True)
+
         built_numbers = self.builder.build(self.book.content.numbers)
         for number in built_numbers:
             self.ui.book_contentTW.addTopLevelItem(number)

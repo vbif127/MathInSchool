@@ -1,13 +1,10 @@
 from PySide6.QtWidgets import QListWidgetItem
 
 from src.item.books.content import ContentBuilder
-from src.item.books.type import Book
+from src.item.books.type import Book, NotSelectionBookError
+from src.settings import NOT_SELECTION_BOOK
 from src.support.active.book import NotifierOfChangeSelectionBook
 from src.useui import Ui, UseUi
-
-
-class NotSelectionBookError(Exception):
-    pass
 
 
 class HandleSelectionBook(UseUi):
@@ -34,6 +31,9 @@ class HandleSelectionBook(UseUi):
         self.content_builder.build()
 
     def set_book_info(self) -> None:
+        if self.book is None:
+            raise NotSelectionBookError(NOT_SELECTION_BOOK)
+
         self.ui.book_imgL.setStyleSheet(f"border-image: url({self.book.image});")
         self.ui.book_description.setPlainText(self.book.description)
 

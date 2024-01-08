@@ -1,5 +1,3 @@
-from tkinter import messagebox
-
 import requests
 
 from src.settings import CONFIG, ID, SERVER
@@ -23,7 +21,7 @@ class Api:
 
         self.translate = Translate(self.config)
 
-    def get_file(self, path: str) -> list[str]:
+    def get_file(self, path: str) -> list[str] | list:
         file_path = PathToFile(path)
 
         response = requests.get(
@@ -33,7 +31,6 @@ class Api:
         try:
             response.raise_for_status()
         except requests.HTTPError:
-            messagebox.showerror("Error", "Не получилось загрузить файл")
             return []
 
         return install_and_extract_files(response)

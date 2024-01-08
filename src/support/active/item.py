@@ -57,6 +57,9 @@ class NotifierOfChangeSelectionItem(Notifier):
 
     def change_item(self, item: SelectionItem) -> None:
         super().change_item(item)
+        if not self.storage:
+            raise ValueError("Storage is not set")
+
         self.change = True
         self.storage.add_save(SaveHistorySelection(
             change_type=EventsTypes.SELECT_ITEM,

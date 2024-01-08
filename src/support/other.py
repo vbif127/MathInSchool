@@ -7,8 +7,8 @@ from typing import Any
 import requests
 from requests import RequestException
 
+from src.settings import TMP
 from src.support.my_iter import MyIter
-from src.support.work_with_files import install_and_extract_files
 from ui.web_view.base import View
 
 
@@ -170,8 +170,8 @@ class Translate:
         )
 
 
-def web_view(self: object, url: MyIter) -> None:
-    url = url()
+def web_view(self: object, urls: MyIter) -> None:
+    url: str = urls()
     if url.endswith(".mp4"):
         install_and_open_video(url)
     else:
@@ -184,8 +184,11 @@ def install_and_open_video(url: str) -> None:
     try:
         response = requests.get(url)
         response.raise_for_status()
-        for file in install_and_extract_files(response):
-            os.startfile(file)
+        path_to_video = os.path.join(TMP, f"{''.join(random.sample(string.ascii_letters, 20))}.mp4")
+        with open(path_to_video, "wb") as file:
+            file.write(response.content)
+
+        os.startfile(path_to_video)
 
     except RequestException as e:
-        messagebox.showerror("Error", f"Не получилось загрузить файл {e}")
+        messagebox.showerror("Error", f"Не получилось загрузить видео {e}")

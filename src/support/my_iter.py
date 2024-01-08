@@ -9,17 +9,17 @@ class MyIter:
         self.iter_obj = _iter
         self.func = func
         self.return_res_funk = return_res_funk
-        self.history = []
+        self.history: list = []
 
     def __call__(
             self,
             _iter: Iterable = (),
-            func: Callable = None,
-            func_args: list | tuple = None,
+            func: Callable | None = None,
+            func_args: list | tuple | None = None,
             return_res_func: bool = False,
             upack: bool = False,
             **func_kwargs,
-    ) -> any:
+    ):
         """Returns an iterator object that iterates over the elements produced by calling the
         `self.__call__()` method until it returns a falsey value. Each element is appended to
         a list `a`, which is then converted to an iterator using `iter(a)` and returned.

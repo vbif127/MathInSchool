@@ -31,3 +31,12 @@ class View(QMainWindow):
         else:
             self.ui.webEngineView.close()
             ev.accept()
+
+
+if __name__ == "__main__":
+    from PySide6.QtWidgets import QApplication
+
+    app = QApplication()
+    view = View("https://youtu.be/rA0g6QOKsaE?list=PLsLi_s1jExgRpu2U6pHcTF71eh3UI2mbf")
+    view.show()
+    app.exec()
