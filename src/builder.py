@@ -12,6 +12,10 @@ from src.useui import Ui, UseUi
 class Builder(UseUi):
     def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
+        self.handle_selection_book: HandleSelectionBook | None = None
+        self.handle_selection_item: HandleSelectionItem | None = None
+        self.handlers_content_selection_connector: HandlersContentSelectionConnector | None = None
+
         self.selected_item: SelectionItem | None = None
         self.book: Book | None = None
 
@@ -28,8 +32,11 @@ class Builder(UseUi):
         self.show_books = ShowBooks(ui, self.selected_item,
                                     self.selected_item_notifier, self.books)
 
+        self.handlers_create()
+
+    def handlers_create(self) -> None:
         self.handle_selection_item = HandleSelectionItem(
-            ui,
+            self.ui,
             self.selected_item,
             self.selected_item_notifier,
         )
@@ -38,10 +45,14 @@ class Builder(UseUi):
             self.book,
             self.selected_book_notifier,
         )
-
-        self.handlers_content_selection_connector = HandlersContentSelectionConnector(ui)
+        self.handlers_content_selection_connector = HandlersContentSelectionConnector(
+            self.ui
+        )
 
     def build(self) -> None:
-        self.handle_selection_item.connect()
-        self.handle_selection_book.connect()
-        self.handlers_content_selection_connector.connect()
+        if self.handle_selection_item:
+            self.handle_selection_item.connect()
+        if self.handle_selection_book:
+            self.handle_selection_book.connect()
+        if self.handlers_content_selection_connector:
+            self.handlers_content_selection_connector.connect()

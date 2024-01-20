@@ -29,6 +29,7 @@ class HandleSelectionBook(UseUi):
         self.notifier.notify()
 
         self.content_builder.build()
+        self.ui.paragraphsPB.click()
 
     def set_book_info(self) -> None:
         if self.book is None:

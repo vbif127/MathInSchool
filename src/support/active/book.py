@@ -1,10 +1,8 @@
-from typing_extensions import override
-
 from src.item.books.type import Book
 from src.storage.rollback import RollBackSelectionBook
 from src.storage.save import SaveHistorySelection
 from src.storage.storage import StorageHistorySelection
-from src.support.active.base import Notifier, WorkWithAny
+from src.support.active.base import WorkWithAny
 from src.types import EventsTypes
 from src.useui import Ui
 
@@ -18,10 +16,10 @@ class WorkWithSelectionBook(WorkWithAny):
         self.book = book
 
 
-class NotifierOfChangeSelectionBook(Notifier):
+class NotifierOfChangeSelectionBook:
     __instance = None
 
-    observers = []
+    observers: list[WorkWithSelectionBook] = []
     storage: StorageHistorySelection | None = None
     _book: Book | None = None
     change: bool = False
@@ -32,11 +30,10 @@ class NotifierOfChangeSelectionBook(Notifier):
         return cls.__instance
 
     def set_values(self, *observers, storage: StorageHistorySelection, book: Book | None) -> None:
-        super().__init__(*observers, item=book)
+        self.observers = list(observers)
         self.storage = storage
         self._book = book
 
-    @override
     def add_observer(self, observer: WorkWithSelectionBook) -> None:
         if not isinstance(observer, WorkWithSelectionBook):
             raise TypeError("The class must inherit from WorkWithSelectionItem")
@@ -47,6 +44,8 @@ class NotifierOfChangeSelectionBook(Notifier):
             raise ValueError("Storage is not set")
 
         for observer in self.observers:
+            if self._book is None:
+                return
             if self.change:
                 self.storage.add_save(SaveHistorySelection(
                     change_type=EventsTypes.SELECT_BOOK,

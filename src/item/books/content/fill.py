@@ -1,12 +1,13 @@
 from abc import abstractmethod
 from collections import defaultdict
-from collections.abc import Iterable
+from collections.abc import Callable, Iterable
 
 from PySide6.QtWidgets import QPushButton, QTreeWidgetItem
 
 from src.item.books.type import NotSelectionBookError
 from src.settings import NOT_SELECTION_BOOK
 from src.support.active.book import WorkWithSelectionBook, add_observer_to_notifier_selection_book
+from src.support.other import find_item_in_str
 from src.useui import Ui
 
 
@@ -51,7 +52,7 @@ class ParagraphConstructor(StringBuilder):
             self.items[nw_top_level_item.text(0)].append(child_item_text)
 
     def construct_paragraph_text(self, desc: str, paragraph_num: str) -> str:
-        formatted_paragraph_num = f"§{paragraph_num.replace('P.', '')}."
+        formatted_paragraph_num = f"{paragraph_num.replace('P.', '§')}."
 
         if self.include_desc:
             formatted_desc = desc.split(' ???? ')[0]
@@ -88,6 +89,14 @@ class Filler(WorkWithSelectionBook):
     def connect(self, btn: QPushButton) -> None:
         btn.clicked.connect(self.__call__)
 
+    @abstractmethod
+    def fill(self, data) -> None:  # noqa: ANN001
+        ...
+
+    @staticmethod
+    def find_item_filter(text: str) -> Callable:
+        return lambda item: bool(find_item_in_str(text, item.text(0)))
+
 
 # book_contentTW
 @add_observer_to_notifier_selection_book
@@ -101,7 +110,9 @@ class ParagraphFiller(Filler):
             raise NotSelectionBookError(NOT_SELECTION_BOOK)
         self.ui.answersCB.setEnabled(False)
 
-        built_paragraphs = self.builder.build(self.book.content.paragraphs)
+        self.fill(self.builder.build(self.book.content.paragraphs))
+
+    def fill(self, built_paragraphs: Iterable) -> None:
         for paragraph in built_paragraphs:
             self.ui.book_contentTW.addTopLevelItem(paragraph)
 
@@ -112,11 +123,29 @@ class NumberFiller(Filler):
         super().__init__(ui, NumberConstructor())
 
     def __call__(self) -> None:
-        super().__call__()
         if not self.book:
             raise NotSelectionBookError(NOT_SELECTION_BOOK)
+
         self.ui.answersCB.setEnabled(True)
 
-        built_numbers = self.builder.build(self.book.content.numbers)
+        self.fill(self.builder.build(self.book.content.numbers))
+
+    def fill(self, built_numbers: Iterable) -> None:
+        self.ui.book_contentTW.clear()
         for number in built_numbers:
             self.ui.book_contentTW.addTopLevelItem(number)
+
+    def search(self, text: str) -> None:
+        if not self.book:
+            raise NotSelectionBookError(NOT_SELECTION_BOOK)
+        if not self.ui.numbersPB.isChecked():
+            return
+
+        self.fill(list(filter(
+            self.find_item_filter(text),
+            self.builder.build(self.book.content.numbers)
+        )))
+
+    def connect(self, btn: QPushButton) -> None:
+        super().connect(btn)
+        self.ui.searchLE.textEdited.connect(self.search)

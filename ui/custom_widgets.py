@@ -7,7 +7,8 @@ from src.item.books.type import Book
 class BookWidgetItem(QWidget):
     def __init__(self, book: Book) -> None:
         super().__init__()
-        self.setMaximumWidth(230)
+        self.setMaximumWidth(200)
+        self.setMaximumHeight(380)
 
         self.vbl = QVBoxLayout()
         self.book = book

@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1172, 888)
+        MainWindow.resize(1533, 921)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"font: 16pt \"Segoe UI\";")
@@ -113,7 +113,7 @@ class Ui_MainWindow(object):
         self.main.setMinimumSize(QSize(0, 800))
         self.stackedWidget_2 = QStackedWidget(self.main)
         self.stackedWidget_2.setObjectName(u"stackedWidget_2")
-        self.stackedWidget_2.setGeometry(QRect(10, 0, 1141, 791))
+        self.stackedWidget_2.setGeometry(QRect(10, 0, 1511, 801))
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.horizontalLayout_7 = QHBoxLayout(self.page_3)
@@ -202,6 +202,7 @@ class Ui_MainWindow(object):
 
         self.list_booksLW = QListWidget(self.sadasFV)
         self.list_booksLW.setObjectName(u"list_booksLW")
+        self.list_booksLW.setStyleSheet(u"font: 12pt \"Segoe UI\";")
         self.list_booksLW.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.list_booksLW.setAutoScroll(False)
         self.list_booksLW.setVerticalScrollMode(QAbstractItemView.ScrollPerPixel)
@@ -209,9 +210,11 @@ class Ui_MainWindow(object):
         self.list_booksLW.setMovement(QListView.Static)
         self.list_booksLW.setFlow(QListView.LeftToRight)
         self.list_booksLW.setProperty("isWrapping", True)
+        self.list_booksLW.setResizeMode(QListView.Fixed)
+        self.list_booksLW.setLayoutMode(QListView.SinglePass)
         self.list_booksLW.setViewMode(QListView.IconMode)
-        self.list_booksLW.setUniformItemSizes(True)
-        self.list_booksLW.setBatchSize(3)
+        self.list_booksLW.setUniformItemSizes(False)
+        self.list_booksLW.setBatchSize(4)
         self.list_booksLW.setWordWrap(True)
 
         self.verticalLayout_6.addWidget(self.list_booksLW)
@@ -362,7 +365,7 @@ class Ui_MainWindow(object):
         __qtreewidgetitem20.setText(0, u"1");
         self.book_contentTW.setHeaderItem(__qtreewidgetitem20)
         self.book_contentTW.setObjectName(u"book_contentTW")
-        self.book_contentTW.setStyleSheet(u"font: 12pt \"Segoe UI\";")
+        self.book_contentTW.setStyleSheet(u"font: 11pt \"Consolas\";")
         self.book_contentTW.setVerticalScrollMode(QAbstractItemView.ScrollPerPixel)
         self.book_contentTW.setIndentation(10)
         self.book_contentTW.setItemsExpandable(True)

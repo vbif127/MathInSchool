@@ -12,7 +12,8 @@ class NotSelectionItemError(Exception):
 
 class HandleSelectionItem(UseUi):
 
-    def __init__(self, ui: Ui, selection_item: SelectionItem | None, notifier: NotifierOfChangeSelectionItem) -> None:
+    def __init__(self, ui: Ui, selection_item: SelectionItem | None,
+                 notifier: NotifierOfChangeSelectionItem) -> None:
         super().__init__(ui)
         self.selection_item = selection_item
         self.notifier = notifier

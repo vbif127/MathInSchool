@@ -1,5 +1,6 @@
 import os
 import random
+import re
 import string
 from tkinter import messagebox
 from typing import Any
@@ -170,14 +171,18 @@ class Translate:
         )
 
 
-def web_view(self: object, urls: MyIter) -> None:
-    url: str = urls()
-    if url.endswith(".mp4"):
-        install_and_open_video(url)
-    else:
-        view = "".join(random.sample(string.ascii_letters, 20))
-        setattr(self, view, View(url))
-        getattr(self, view).show()
+def web_view(self: object, urls: MyIter | str) -> None:
+    if isinstance(urls, str) and urls.endswith(".mp4"):
+        install_and_open_video(urls)
+
+    view = get_random_string()
+    setattr(self, view, View(urls))
+    getattr(self, view).show()
+
+
+def get_random_string() -> str:
+    view = "".join(random.sample(string.ascii_letters, 20))
+    return view
 
 
 def install_and_open_video(url: str) -> None:
@@ -192,3 +197,8 @@ def install_and_open_video(url: str) -> None:
 
     except RequestException as e:
         messagebox.showerror("Error", f"Не получилось загрузить видео {e}")
+
+
+def find_item_in_str(finding_it: Any, it: str, flag: re.RegexFlag = re.IGNORECASE) \
+        -> list[str | None]:
+    return re.findall(f".*{finding_it}.*", it, flag)
