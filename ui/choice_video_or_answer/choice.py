@@ -6,6 +6,7 @@ from tkinter import messagebox
 from PySide6.QtWidgets import QListWidgetItem, QMainWindow
 
 from src.api import Api
+from src.storage import GlobalStateStorage
 from src.support.other import web_view
 from ui.choice_video_or_answer.choice_video_or_answer_ui import Ui_MainWindow
 
@@ -77,7 +78,7 @@ class ChoiceFileWindow(ChoiceWindow):
             if not received_file:
                 messagebox.showerror("Error", "Не получилось загрузить файл")
                 continue
-
+            GlobalStateStorage.installed_files.append(received_file)
             os.startfile(received_file)
 
 

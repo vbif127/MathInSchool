@@ -1,7 +1,7 @@
 import requests
 
 from src.settings import CONFIG, ID, SERVER
-from src.support.active.item import SelectionItem
+from src.support.active import SelectionItem
 from src.support.other import Json, Translate
 from src.support.work_with_files import PathToFile, install_and_extract_files
 

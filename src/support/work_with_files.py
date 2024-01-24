@@ -38,6 +38,8 @@ def install_and_extract_files(response: requests.Response) -> list[str]:
     -------
         None.
     """
+    from src.storage import GlobalStateStorage
+
     temp_dir = os.path.join(TMP, ''.join(random.sample(string.ascii_letters, 20)))
 
     zip_file_path = f"{temp_dir}.zip"
@@ -49,5 +51,8 @@ def install_and_extract_files(response: requests.Response) -> list[str]:
 
     with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
         zip_ref.extractall(temp_dir)
+
+    GlobalStateStorage.installed_files.append(zip_file_path)
+    GlobalStateStorage.installed_files.extend(list(map(join_path_to_file(temp_dir), os.listdir(temp_dir))))
 
     return list(map(join_path_to_file(temp_dir), os.listdir(temp_dir)))

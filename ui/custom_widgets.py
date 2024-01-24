@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QLabel, QPlainTextEdit, QVBoxLayout, QWidget
 
 from src.api import Api
-from src.item.books.type import Book
+from src.item.books.type.type_abc import Book
 
 
 class BookWidgetItem(QWidget):
@@ -37,4 +37,5 @@ class BookWidgetItem(QWidget):
         return book_image_label
 
     def show_image(self) -> None:
+
         self.book_image_label.setStyleSheet(f"border-image: url('{self.book.image}');")
