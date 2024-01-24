@@ -1,0 +1,6 @@
+class NotSelectionItemError(Exception):
+    ...
+
+
+class NotSelectionBookError(Exception):
+    ...
