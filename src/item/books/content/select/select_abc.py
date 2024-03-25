@@ -1,11 +1,14 @@
+import os
 import re
 from abc import abstractmethod
+from tkinter.messagebox import showinfo
 
 from PySide6.QtWidgets import QCheckBox, QPushButton, QTreeWidgetItem
 
 from src.api import Api
-from src.settings import SEPARATOR
+from src.settings import SEPARATOR, BASE_PATH
 from src.support.other import get_random_string
+from src.support.work_with_files import PathToFile
 from src.useui import UseUi
 from ui import Ui
 from ui.choice_video_or_answer.choice import ChoiceAnswerWindow, ChoiceFileWindow, ChoiceVideoWindow
@@ -22,7 +25,7 @@ def split_by_separator(item: str) -> list:
 
 
 def adaptation_paragraph(paragraph: str) -> str:
-    return re.sub("§\d?\.\.?", "P.", paragraph)
+    return re.sub(r"§\.?\.?", "P.", paragraph)
 
 
 class HandlerContentSelection(UseUi):
@@ -52,6 +55,9 @@ class HandlerContentSelection(UseUi):
         setattr(self, get_random_string(), ChoiceAnswerWindow(item.text(0), files))
 
     def view_video(self, item: QTreeWidgetItem, urls: list[str], check_box: QCheckBox | None = None) -> None:
+        if not urls and check_box is not None and check_box.isChecked():
+            os.startfile(os.path.join(PathToFile(BASE_PATH).fullpath(), 'no_video.png').replace("\\", "/"))
+            return
         if not urls or check_box is None or not check_box.isChecked():
             return
         setattr(self, get_random_string(), ChoiceVideoWindow(item.text(0), urls))

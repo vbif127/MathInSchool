@@ -1,10 +1,10 @@
 from PySide6.QtWidgets import QListWidgetItem
 
 from src.item.books.content import BaseContentBuilder, ContentBuilder, NewContentBuilder
-from src.support.errors import NotSelectionBookError
-from src.item.books.type.type_abc import Book, TypesBooks
+from src.item.books.type.type_abc import TypesBooks
 from src.settings import NOT_SELECTION_BOOK
 from src.storage import GlobalStateStorage
+from src.support.errors import NotSelectionBookError
 from src.useui import Ui, UseUi
 
 
@@ -13,7 +13,7 @@ class HandleSelectionBook(UseUi):
     def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
         
-        self.content_builder: ContentBuilder = None
+        self.content_builder: ContentBuilder | None = None
 
     def handle_selection_book(self, item: QListWidgetItem) -> None:
         if item is None:

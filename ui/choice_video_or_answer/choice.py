@@ -1,9 +1,11 @@
 import os
+import re
 from abc import abstractmethod
 from collections import namedtuple
 from tkinter import messagebox
 
 from PySide6.QtWidgets import QListWidgetItem, QMainWindow
+from pytube import YouTube  # type: ignore
 
 from src.api import Api
 from src.storage import GlobalStateStorage
@@ -11,6 +13,13 @@ from src.support.other import web_view
 from ui.choice_video_or_answer.choice_video_or_answer_ui import Ui_MainWindow
 
 ItemData = namedtuple("ItemData", ["number", "file"])
+
+
+def is_youtube_url(url: str) -> bool:
+    is_youtube = re.findall(r"youtube|youtu\.be", url)
+    if is_youtube:
+        return True
+    return False
 
 
 class ChoiceWindow(QMainWindow):
@@ -55,12 +64,16 @@ class ChoiceVideoWindow(ChoiceWindow):
     @staticmethod
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
-        item.setData(1, {"file": data[1]})
-        item.setText(f"Видео {data[0]}")
+        item.setData(1, {"url": data[1]})
+        if is_youtube_url(data[1]):
+            video_title = YouTube(data[1]).title
+        else:
+            video_title = ""
+        item.setText(f"Видео {data[0]} {video_title}")
         return item
 
     def view(self, item: QListWidgetItem) -> None:
-        url: str = item.data(1).get("file")
+        url: str = item.data(1).get("url")
         web_view(self, url)
 
 
@@ -70,14 +83,25 @@ class ChoiceFileWindow(ChoiceWindow):
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
         item.setData(1, {"file": data[1]})
+        item.setData(3, [])
         item.setText(f"Файл {data[0]}")
         return item
 
     def view(self, item: QListWidgetItem) -> None:
-        for received_file in self.api.get_file(item.data(1).get("file")):
+        if not item.data(3):
+            received_files = self.api.get_file(item.data(1).get("file"))
+        else:
+            received_files = item.data(3)
+
+        if not received_files:
+            messagebox.showerror("Error", "Файл не найден")
+            self.close()
+        for received_file in received_files:
             if not received_file:
                 messagebox.showerror("Error", "Не получилось загрузить файл")
                 continue
+            if not item.data(3):
+                item.setData(3, item.data(3) + [received_file])
             GlobalStateStorage.installed_files.append(received_file)
             os.startfile(received_file)
 
@@ -88,5 +112,6 @@ class ChoiceAnswerWindow(ChoiceFileWindow):
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
         item.setData(1, {"file": data[1]})
+        item.setData(3, [])
         item.setText(f"Ответ(Решение) {data[0]}")
         return item

@@ -52,6 +52,7 @@ class Ui_MainWindow(object):
 "}")
         self.horizontalLayout_3 = QHBoxLayout(self.header)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalLayout_3.setContentsMargins(-1, -1, -1, 7)
         self.horizontalFrame = QFrame(self.header)
         self.horizontalFrame.setObjectName(u"horizontalFrame")
         self.horizontalFrame.setMinimumSize(QSize(110, 40))
@@ -73,10 +74,19 @@ class Ui_MainWindow(object):
         self.minBT.setObjectName(u"minBT")
         self.minBT.setMinimumSize(QSize(30, 30))
         self.minBT.setMaximumSize(QSize(30, 30))
+        font = QFont()
+        font.setFamilies([u"Consolas"])
+        font.setPointSize(26)
+        font.setBold(False)
+        font.setItalic(False)
+        self.minBT.setFont(font)
         self.minBT.setCursor(QCursor(Qt.PointingHandCursor))
         self.minBT.setStyleSheet(u"border: rgb(0, 0, 0);\n"
-"background-color: rgb(236, 236, 0);\n"
-"border-radius: 15")
+"background-color:rgb(255, 217, 3);\n"
+"border-radius: 15;\n"
+"color: \"#fff\";\n"
+"font: 26pt \"Consolas\";\n"
+"padding-bottom: 4.8;")
 
         self.horizontalLayout.addWidget(self.minBT)
 
@@ -87,7 +97,11 @@ class Ui_MainWindow(object):
         self.maxBT.setCursor(QCursor(Qt.PointingHandCursor))
         self.maxBT.setStyleSheet(u"border: rgb(255, 255, 255);\n"
 "background-color: rgb(0, 85, 255);\n"
-"border-radius: 15")
+"border-radius: 15;\n"
+"color: rgb(255, 255, 255);\n"
+"font: 700 14pt \"Consolas\";\n"
+"padding-bottom: 1.5")
+        self.maxBT.setFlat(False)
 
         self.horizontalLayout.addWidget(self.maxBT)
 
@@ -98,7 +112,10 @@ class Ui_MainWindow(object):
         self.clouseBT.setCursor(QCursor(Qt.PointingHandCursor))
         self.clouseBT.setStyleSheet(u"border: rgb(255, 255, 255);\n"
 "background-color: rgb(218, 0, 0);\n"
-"border-radius: 15")
+"border-radius: 15;\n"
+"padding-bottom: 1.5;\n"
+"font: 16pt \"Consolas\";\n"
+"color: #fff")
 
         self.horizontalLayout.addWidget(self.clouseBT)
 
@@ -151,6 +168,7 @@ class Ui_MainWindow(object):
         __qtreewidgetitem13 = QTreeWidgetItem(__qtreewidgetitem11)
         QTreeWidgetItem(__qtreewidgetitem13)
         QTreeWidgetItem(__qtreewidgetitem13)
+        QTreeWidgetItem(__qtreewidgetitem11)
         __qtreewidgetitem14 = QTreeWidgetItem(self.treeWidget)
         __qtreewidgetitem15 = QTreeWidgetItem(__qtreewidgetitem14)
         QTreeWidgetItem(__qtreewidgetitem15)
@@ -165,6 +183,8 @@ class Ui_MainWindow(object):
         __qtreewidgetitem19 = QTreeWidgetItem(__qtreewidgetitem17)
         QTreeWidgetItem(__qtreewidgetitem19)
         QTreeWidgetItem(__qtreewidgetitem19)
+        QTreeWidgetItem(self.treeWidget)
+        QTreeWidgetItem(self.treeWidget)
         self.treeWidget.setObjectName(u"treeWidget")
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(20)
@@ -191,11 +211,6 @@ class Ui_MainWindow(object):
         self.itemL.setObjectName(u"itemL")
 
         self.horizontalLayout_6.addWidget(self.itemL)
-
-        self.label_4 = QLabel(self.sadasFV)
-        self.label_4.setObjectName(u"label_4")
-
-        self.horizontalLayout_6.addWidget(self.label_4)
 
 
         self.verticalLayout_6.addLayout(self.horizontalLayout_6)
@@ -403,9 +418,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430 \u0432 \u0428\u043a\u043e\u043b\u0435 \u2116103", None))
-        self.minBT.setText("")
-        self.maxBT.setText("")
-        self.clouseBT.setText("")
+        self.minBT.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.maxBT.setText(QCoreApplication.translate("MainWindow", u"M", None))
+        self.clouseBT.setText(QCoreApplication.translate("MainWindow", u"X", None))
 
         __sortingEnabled = self.treeWidget.isSortingEnabled()
         self.treeWidget.setSortingEnabled(False)
@@ -467,38 +482,43 @@ class Ui_MainWindow(object):
         ___qtreewidgetitem27.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
         ___qtreewidgetitem28 = ___qtreewidgetitem26.child(1)
         ___qtreewidgetitem28.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem29 = self.treeWidget.topLevelItem(5)
-        ___qtreewidgetitem29.setText(0, QCoreApplication.translate("MainWindow", u"10 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem30 = ___qtreewidgetitem29.child(0)
-        ___qtreewidgetitem30.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
+        ___qtreewidgetitem29 = ___qtreewidgetitem22.child(2)
+        ___qtreewidgetitem29.setText(0, QCoreApplication.translate("MainWindow", u"\u041e\u0413\u042d", None));
+        ___qtreewidgetitem30 = self.treeWidget.topLevelItem(5)
+        ___qtreewidgetitem30.setText(0, QCoreApplication.translate("MainWindow", u"10 \u043a\u043b\u0430\u0441\u0441", None));
         ___qtreewidgetitem31 = ___qtreewidgetitem30.child(0)
-        ___qtreewidgetitem31.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem32 = ___qtreewidgetitem30.child(1)
-        ___qtreewidgetitem32.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem33 = ___qtreewidgetitem29.child(1)
-        ___qtreewidgetitem33.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem34 = ___qtreewidgetitem33.child(0)
-        ___qtreewidgetitem34.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem35 = ___qtreewidgetitem33.child(1)
-        ___qtreewidgetitem35.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem36 = self.treeWidget.topLevelItem(6)
-        ___qtreewidgetitem36.setText(0, QCoreApplication.translate("MainWindow", u"11 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem37 = ___qtreewidgetitem36.child(0)
-        ___qtreewidgetitem37.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
+        ___qtreewidgetitem31.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
+        ___qtreewidgetitem32 = ___qtreewidgetitem31.child(0)
+        ___qtreewidgetitem32.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem33 = ___qtreewidgetitem31.child(1)
+        ___qtreewidgetitem33.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem34 = ___qtreewidgetitem30.child(1)
+        ___qtreewidgetitem34.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
+        ___qtreewidgetitem35 = ___qtreewidgetitem34.child(0)
+        ___qtreewidgetitem35.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem36 = ___qtreewidgetitem34.child(1)
+        ___qtreewidgetitem36.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem37 = self.treeWidget.topLevelItem(6)
+        ___qtreewidgetitem37.setText(0, QCoreApplication.translate("MainWindow", u"11 \u043a\u043b\u0430\u0441\u0441", None));
         ___qtreewidgetitem38 = ___qtreewidgetitem37.child(0)
-        ___qtreewidgetitem38.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem39 = ___qtreewidgetitem37.child(1)
-        ___qtreewidgetitem39.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem40 = ___qtreewidgetitem36.child(1)
-        ___qtreewidgetitem40.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem41 = ___qtreewidgetitem40.child(0)
-        ___qtreewidgetitem41.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem42 = ___qtreewidgetitem40.child(1)
-        ___qtreewidgetitem42.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem38.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
+        ___qtreewidgetitem39 = ___qtreewidgetitem38.child(0)
+        ___qtreewidgetitem39.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem40 = ___qtreewidgetitem38.child(1)
+        ___qtreewidgetitem40.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem41 = ___qtreewidgetitem37.child(1)
+        ___qtreewidgetitem41.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
+        ___qtreewidgetitem42 = ___qtreewidgetitem41.child(0)
+        ___qtreewidgetitem42.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem43 = ___qtreewidgetitem41.child(1)
+        ___qtreewidgetitem43.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
+        ___qtreewidgetitem44 = self.treeWidget.topLevelItem(7)
+        ___qtreewidgetitem44.setText(0, QCoreApplication.translate("MainWindow", u"\u0415\u0413\u042d", None));
+        ___qtreewidgetitem45 = self.treeWidget.topLevelItem(8)
+        ___qtreewidgetitem45.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430", None));
         self.treeWidget.setSortingEnabled(__sortingEnabled)
 
         self.itemL.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.book_imgL.setText("")
         self.backPB.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0430\u0434", None))
         self.paragraphsPB.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0430\u0433\u0440\u0430\u0444\u044b", None))

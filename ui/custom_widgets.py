@@ -37,5 +37,4 @@ class BookWidgetItem(QWidget):
         return book_image_label
 
     def show_image(self) -> None:
-
         self.book_image_label.setStyleSheet(f"border-image: url('{self.book.image}');")

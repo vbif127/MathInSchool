@@ -51,6 +51,7 @@ class Image:
         return self.path
 
 
+
 @define
 class Book:
     active_item: SelectionItem
@@ -60,11 +61,10 @@ class Book:
     type_: str
     image: Image | str = field(converter=Image)
     description: str
-    reinforce: bool = field(default=False)
+    tags: list[str] = field(default=[])
 
     api: Api = field(init=False, default=Api())
     __content: Content = field(init=False, repr=False, default=None)  # type: ignore
-    __image: str = field(init=False, repr=False)
     __description: str = field(init=False, repr=False, converter=lambda desc: desc.replace("\n\n", "\n"))
 
     @property

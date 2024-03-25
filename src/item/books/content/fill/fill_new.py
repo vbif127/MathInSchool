@@ -56,6 +56,7 @@ class NewParagraphsFiller(ParagraphsFiller):
 
     def fill(self, built_paragraphs: Iterable) -> None:
         super_call = super().fill(built_paragraphs)
+        self.ui.answersCB.show()
         self.ui.answersCB.setEnabled(True)
 
         return super_call

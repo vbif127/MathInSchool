@@ -58,7 +58,7 @@ class ParagraphGetter:
 
         if GlobalStateStorage.selection_book.type_ == TypesBooks.NEW.value:
             return paragraphs[adapted_paragraph]
-        print(paragraph, adapted_paragraph)
+
         return paragraphs[adapted_paragraph.split(". ")[0]]
 
     def get_scraped_paragraph(self, topic: str, paragraph: str) -> list[str]:
@@ -113,6 +113,7 @@ class HandlerContentSelectionParagraph(HandlerContentSelection):
                 number = numbers[number_text]
 
                 self.view_files(item, number.questions)
+
                 self.view_files(item, [
                     file for file in number.answers
                     if file.startswith("classes")

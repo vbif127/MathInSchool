@@ -2,6 +2,7 @@ import os
 import random
 import re
 import string
+import webbrowser
 from tkinter import messagebox
 from typing import Any
 
@@ -172,12 +173,15 @@ class Translate:
 
 
 def web_view(self: object, urls: MyIter | str) -> None:
-    if isinstance(urls, str) and urls.endswith(".mp4"):
-        install_and_open_video(urls)
+    if isinstance(urls, MyIter):
+        for url in urls():
+            webbrowser.open_new_tab(url)
+    else:
+        webbrowser.open_new_tab(urls)
 
-    view = get_random_string()
-    setattr(self, view, View(urls))
-    getattr(self, view).show()
+    # view = get_random_string()
+    # setattr(self, view, View(urls))
+    # getattr(self, view).show()
 
 
 def get_random_string() -> str:

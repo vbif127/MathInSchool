@@ -16,6 +16,8 @@ class Builder(UseUi):
         self.handlers_content_selection_connector: HandlersContentSelectionConnector | None = None
 
         self.show_books = ShowBooks(ui)
+        self.ui.itemL.hide()
+        self.ui.maxBT.hide()
 
         self.handlers_create()
 

@@ -53,7 +53,8 @@ class ShowBooks(UseUi):
     def filter_books(self, book: Book) -> bool:
         if GlobalStateStorage.selection_item is None:
             raise ValueError("Not selection item")
-        return book.reinforce == GlobalStateStorage.selection_item.reinforce
+        print(book.tags, GlobalStateStorage.selection_item.filter_tags)
+        return book.tags == GlobalStateStorage.selection_item.filter_tags
 
     def show(self) -> None:
         self.ui.list_booksLW.clear()

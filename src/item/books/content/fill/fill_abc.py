@@ -51,10 +51,12 @@ class ParagraphsFiller(Filler, ABC):
         if not GlobalStateStorage.selection_book:
             raise NotSelectionBookError(NOT_SELECTION_BOOK)
         self.ui.answersCB.setEnabled(False)
+        self.ui.answersCB.hide()
 
         self.fill(self.builder.build(GlobalStateStorage.selection_book.content.paragraphs))
 
     def fill(self, built_paragraphs: Iterable) -> None:
+        self.ui.searchLE.hide()
         for paragraph in built_paragraphs:
             self.ui.book_contentTW.addTopLevelItem(paragraph)
 
@@ -65,11 +67,14 @@ class NumbersFiller(Filler, ABC):
             raise NotSelectionBookError(NOT_SELECTION_BOOK)
 
         self.ui.answersCB.setEnabled(True)
+        self.ui.answersCB.show()
 
         self.fill(self.builder.build(GlobalStateStorage.selection_book.content.numbers))
 
     def fill(self, built_numbers: Iterable) -> None:
         self.ui.book_contentTW.clear()
+        self.ui.searchLE.show()
+
         for number in built_numbers:
             self.ui.book_contentTW.addTopLevelItem(number)
 

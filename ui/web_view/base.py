@@ -1,3 +1,4 @@
+import webbrowser
 from collections.abc import Callable
 from typing import NewType
 
@@ -16,17 +17,21 @@ class View(QMainWindow):
         self.ui = UiView()
         self.ui.setupUi(self)
         self.url: str | MyIter = url
+
         if isinstance(self.url, str):
-            self.ui.webEngineView.setUrl(QUrl(url))
+            webbrowser.open_new_tab(url)
+            # self.ui.webEngineView.setUrl(QUrl(url))
 
         elif it := url():
-            self.ui.webEngineView.setUrl(QUrl(it))
+            webbrowser.open_new_tab(it)
+            # self.ui.webEngineView.setUrl(QUrl(it))
         else:
             self.close()
 
     def closeEvent(self, ev: QEvent) -> None:  # noqa: N802
         if not isinstance(self.url, str) and (it := self.url()):
-            self.ui.webEngineView.setUrl(QUrl(it))
+            webbrowser.open_new_tab(it)
+            # self.ui.webEngineView.setUrl(QUrl(it))
             ev.ignore()
         else:
             self.ui.webEngineView.close()

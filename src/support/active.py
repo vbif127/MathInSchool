@@ -5,4 +5,4 @@ from attr import define, field
 class SelectionItem:
     class_: int = field(converter=int)
     text: str
-    reinforce: bool
+    filter_tags: list[str] = field(factory=list)
