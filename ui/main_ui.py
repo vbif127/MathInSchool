@@ -139,52 +139,6 @@ class Ui_MainWindow(object):
         __qtreewidgetitem = QTreeWidgetItem()
         __qtreewidgetitem.setText(0, u"1");
         self.treeWidget.setHeaderItem(__qtreewidgetitem)
-        __qtreewidgetitem1 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem2 = QTreeWidgetItem(__qtreewidgetitem1)
-        QTreeWidgetItem(__qtreewidgetitem2)
-        QTreeWidgetItem(__qtreewidgetitem2)
-        __qtreewidgetitem3 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem4 = QTreeWidgetItem(__qtreewidgetitem3)
-        QTreeWidgetItem(__qtreewidgetitem4)
-        QTreeWidgetItem(__qtreewidgetitem4)
-        __qtreewidgetitem5 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem6 = QTreeWidgetItem(__qtreewidgetitem5)
-        QTreeWidgetItem(__qtreewidgetitem6)
-        QTreeWidgetItem(__qtreewidgetitem6)
-        __qtreewidgetitem7 = QTreeWidgetItem(__qtreewidgetitem5)
-        QTreeWidgetItem(__qtreewidgetitem7)
-        QTreeWidgetItem(__qtreewidgetitem7)
-        __qtreewidgetitem8 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem9 = QTreeWidgetItem(__qtreewidgetitem8)
-        QTreeWidgetItem(__qtreewidgetitem9)
-        QTreeWidgetItem(__qtreewidgetitem9)
-        __qtreewidgetitem10 = QTreeWidgetItem(__qtreewidgetitem8)
-        QTreeWidgetItem(__qtreewidgetitem10)
-        QTreeWidgetItem(__qtreewidgetitem10)
-        __qtreewidgetitem11 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem12 = QTreeWidgetItem(__qtreewidgetitem11)
-        QTreeWidgetItem(__qtreewidgetitem12)
-        QTreeWidgetItem(__qtreewidgetitem12)
-        __qtreewidgetitem13 = QTreeWidgetItem(__qtreewidgetitem11)
-        QTreeWidgetItem(__qtreewidgetitem13)
-        QTreeWidgetItem(__qtreewidgetitem13)
-        QTreeWidgetItem(__qtreewidgetitem11)
-        __qtreewidgetitem14 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem15 = QTreeWidgetItem(__qtreewidgetitem14)
-        QTreeWidgetItem(__qtreewidgetitem15)
-        QTreeWidgetItem(__qtreewidgetitem15)
-        __qtreewidgetitem16 = QTreeWidgetItem(__qtreewidgetitem14)
-        QTreeWidgetItem(__qtreewidgetitem16)
-        QTreeWidgetItem(__qtreewidgetitem16)
-        __qtreewidgetitem17 = QTreeWidgetItem(self.treeWidget)
-        __qtreewidgetitem18 = QTreeWidgetItem(__qtreewidgetitem17)
-        QTreeWidgetItem(__qtreewidgetitem18)
-        QTreeWidgetItem(__qtreewidgetitem18)
-        __qtreewidgetitem19 = QTreeWidgetItem(__qtreewidgetitem17)
-        QTreeWidgetItem(__qtreewidgetitem19)
-        QTreeWidgetItem(__qtreewidgetitem19)
-        QTreeWidgetItem(self.treeWidget)
-        QTreeWidgetItem(self.treeWidget)
         self.treeWidget.setObjectName(u"treeWidget")
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(20)
@@ -376,9 +330,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_7.addLayout(self.horizontalLayout_4)
 
         self.book_contentTW = QTreeWidget(self.gdfgdfFV)
-        __qtreewidgetitem20 = QTreeWidgetItem()
-        __qtreewidgetitem20.setText(0, u"1");
-        self.book_contentTW.setHeaderItem(__qtreewidgetitem20)
+        __qtreewidgetitem1 = QTreeWidgetItem()
+        __qtreewidgetitem1.setText(0, u"1");
+        self.book_contentTW.setHeaderItem(__qtreewidgetitem1)
         self.book_contentTW.setObjectName(u"book_contentTW")
         self.book_contentTW.setStyleSheet(u"font: 11pt \"Consolas\";")
         self.book_contentTW.setVerticalScrollMode(QAbstractItemView.ScrollPerPixel)
@@ -421,103 +375,6 @@ class Ui_MainWindow(object):
         self.minBT.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.maxBT.setText(QCoreApplication.translate("MainWindow", u"M", None))
         self.clouseBT.setText(QCoreApplication.translate("MainWindow", u"X", None))
-
-        __sortingEnabled = self.treeWidget.isSortingEnabled()
-        self.treeWidget.setSortingEnabled(False)
-        ___qtreewidgetitem = self.treeWidget.topLevelItem(0)
-        ___qtreewidgetitem.setText(0, QCoreApplication.translate("MainWindow", u"5 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem1 = ___qtreewidgetitem.child(0)
-        ___qtreewidgetitem1.setText(0, QCoreApplication.translate("MainWindow", u"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430", None));
-        ___qtreewidgetitem2 = ___qtreewidgetitem1.child(0)
-        ___qtreewidgetitem2.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem3 = ___qtreewidgetitem1.child(1)
-        ___qtreewidgetitem3.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem4 = self.treeWidget.topLevelItem(1)
-        ___qtreewidgetitem4.setText(0, QCoreApplication.translate("MainWindow", u"6 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem5 = ___qtreewidgetitem4.child(0)
-        ___qtreewidgetitem5.setText(0, QCoreApplication.translate("MainWindow", u"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430", None));
-        ___qtreewidgetitem6 = ___qtreewidgetitem5.child(0)
-        ___qtreewidgetitem6.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem7 = ___qtreewidgetitem5.child(1)
-        ___qtreewidgetitem7.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem8 = self.treeWidget.topLevelItem(2)
-        ___qtreewidgetitem8.setText(0, QCoreApplication.translate("MainWindow", u"7 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem9 = ___qtreewidgetitem8.child(0)
-        ___qtreewidgetitem9.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
-        ___qtreewidgetitem10 = ___qtreewidgetitem9.child(0)
-        ___qtreewidgetitem10.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem11 = ___qtreewidgetitem9.child(1)
-        ___qtreewidgetitem11.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem12 = ___qtreewidgetitem8.child(1)
-        ___qtreewidgetitem12.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem13 = ___qtreewidgetitem12.child(0)
-        ___qtreewidgetitem13.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem14 = ___qtreewidgetitem12.child(1)
-        ___qtreewidgetitem14.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem15 = self.treeWidget.topLevelItem(3)
-        ___qtreewidgetitem15.setText(0, QCoreApplication.translate("MainWindow", u"8 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem16 = ___qtreewidgetitem15.child(0)
-        ___qtreewidgetitem16.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
-        ___qtreewidgetitem17 = ___qtreewidgetitem16.child(0)
-        ___qtreewidgetitem17.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem18 = ___qtreewidgetitem16.child(1)
-        ___qtreewidgetitem18.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem19 = ___qtreewidgetitem15.child(1)
-        ___qtreewidgetitem19.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem20 = ___qtreewidgetitem19.child(0)
-        ___qtreewidgetitem20.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem21 = ___qtreewidgetitem19.child(1)
-        ___qtreewidgetitem21.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem22 = self.treeWidget.topLevelItem(4)
-        ___qtreewidgetitem22.setText(0, QCoreApplication.translate("MainWindow", u"9 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem23 = ___qtreewidgetitem22.child(0)
-        ___qtreewidgetitem23.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
-        ___qtreewidgetitem24 = ___qtreewidgetitem23.child(0)
-        ___qtreewidgetitem24.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem25 = ___qtreewidgetitem23.child(1)
-        ___qtreewidgetitem25.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem26 = ___qtreewidgetitem22.child(1)
-        ___qtreewidgetitem26.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem27 = ___qtreewidgetitem26.child(0)
-        ___qtreewidgetitem27.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem28 = ___qtreewidgetitem26.child(1)
-        ___qtreewidgetitem28.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem29 = ___qtreewidgetitem22.child(2)
-        ___qtreewidgetitem29.setText(0, QCoreApplication.translate("MainWindow", u"\u041e\u0413\u042d", None));
-        ___qtreewidgetitem30 = self.treeWidget.topLevelItem(5)
-        ___qtreewidgetitem30.setText(0, QCoreApplication.translate("MainWindow", u"10 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem31 = ___qtreewidgetitem30.child(0)
-        ___qtreewidgetitem31.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
-        ___qtreewidgetitem32 = ___qtreewidgetitem31.child(0)
-        ___qtreewidgetitem32.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem33 = ___qtreewidgetitem31.child(1)
-        ___qtreewidgetitem33.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem34 = ___qtreewidgetitem30.child(1)
-        ___qtreewidgetitem34.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem35 = ___qtreewidgetitem34.child(0)
-        ___qtreewidgetitem35.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem36 = ___qtreewidgetitem34.child(1)
-        ___qtreewidgetitem36.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem37 = self.treeWidget.topLevelItem(6)
-        ___qtreewidgetitem37.setText(0, QCoreApplication.translate("MainWindow", u"11 \u043a\u043b\u0430\u0441\u0441", None));
-        ___qtreewidgetitem38 = ___qtreewidgetitem37.child(0)
-        ___qtreewidgetitem38.setText(0, QCoreApplication.translate("MainWindow", u"\u0410\u043b\u0433\u0435\u0431\u0440\u0430", None));
-        ___qtreewidgetitem39 = ___qtreewidgetitem38.child(0)
-        ___qtreewidgetitem39.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem40 = ___qtreewidgetitem38.child(1)
-        ___qtreewidgetitem40.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem41 = ___qtreewidgetitem37.child(1)
-        ___qtreewidgetitem41.setText(0, QCoreApplication.translate("MainWindow", u"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f", None));
-        ___qtreewidgetitem42 = ___qtreewidgetitem41.child(0)
-        ___qtreewidgetitem42.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem43 = ___qtreewidgetitem41.child(1)
-        ___qtreewidgetitem43.setText(0, QCoreApplication.translate("MainWindow", u"\u0423\u0433\u043b\u0443\u0431\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441", None));
-        ___qtreewidgetitem44 = self.treeWidget.topLevelItem(7)
-        ___qtreewidgetitem44.setText(0, QCoreApplication.translate("MainWindow", u"\u0415\u0413\u042d", None));
-        ___qtreewidgetitem45 = self.treeWidget.topLevelItem(8)
-        ___qtreewidgetitem45.setText(0, QCoreApplication.translate("MainWindow", u"\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430", None));
-        self.treeWidget.setSortingEnabled(__sortingEnabled)
-
         self.itemL.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.book_imgL.setText("")
         self.backPB.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0430\u0434", None))

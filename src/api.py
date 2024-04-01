@@ -36,7 +36,7 @@ class Api:
         return install_and_extract_files(response)
 
     def get_json_book(self, active_item: SelectionItem, book_identifier: str, is_oge: bool = False) -> dict:
-
+        print(active_item)
         translated_book_name, translated_item = self.get_translated(
             active_item,
             book_identifier,

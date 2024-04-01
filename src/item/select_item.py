@@ -27,19 +27,20 @@ class HandleSelectionItem(UseUi):
         if not item.parent().parent() and not is_oge:
             return
 
-        if not re.findall(r"\d*", item.parent().text(0)):
+        if not re.findall(r"\d+", item.parent().text(0)):
             return
 
         GlobalStateStorage.selection_item = self.make_active_item(item, is_oge)
 
-        self.ui.itemL.setText(f"{item.parent().text(0) if not is_oge else item.text(0)}. {GlobalStateStorage.selection_item.class_} класс")
+        self.ui.itemL.setText(f"{item.parent().text(0) if not is_oge else item.text(0)}."
+                              f" {GlobalStateStorage.selection_item.class_} класс")
         self.ui.itemL.show()
         self.show_books.show()
 
     @staticmethod
     def make_active_item(item: QTreeWidgetItem, is_oge: bool) -> SelectionItem:
         return SelectionItem(
-            class_=re.findall(r"\d*", item.parent().parent().text(0)
+            class_=re.findall(r"\d+", item.parent().parent().text(0)
             if item.parent().parent() and item.text(0) != "ОГЭ" else
             item.parent().text(0))[0],
             text=item.parent().text(0) if not is_oge else item.text(0),

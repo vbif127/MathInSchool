@@ -16,6 +16,14 @@ ItemData = namedtuple("ItemData", ["number", "file"])
 
 
 def is_youtube_url(url: str) -> bool:
+    """
+    Check if the given URL is a YouTube URL.
+
+    :param url: A string representing the URL to be checked.
+    :type url: str
+    :return: True if the URL is a YouTube URL, False otherwise.
+    :rtype: bool
+    """
     is_youtube = re.findall(r"youtube|youtu\.be", url)
     if is_youtube:
         return True
@@ -69,7 +77,7 @@ class ChoiceVideoWindow(ChoiceWindow):
             video_title = YouTube(data[1]).title
         else:
             video_title = ""
-        item.setText(f"Видео {data[0]} {video_title}")
+        item.setText(f"Видео {data[0]}. {video_title}")
         return item
 
     def view(self, item: QListWidgetItem) -> None:
