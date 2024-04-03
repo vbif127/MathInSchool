@@ -38,9 +38,7 @@ class Image:
         self.path = self.get_image(path)
 
     def get_image(self, path: str) -> str:
-        path = PathToFile(path)
-
-        image = self.api.get_file(path.path)
+        image = self.api.get_file(path)
 
         if not image:
             return os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png').replace("\\", "/")

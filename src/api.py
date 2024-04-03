@@ -22,12 +22,10 @@ class Api:
         self.translate = Translate(self.config)
 
     def get_file(self, path: str) -> list[str] | list:
-        file_path = PathToFile(path)
-        print(file_path)
 
         response = requests.get(
             f"{self.server}/file/{self.id}",
-            json={"path": file_path.path.replace("\\", "/")},
+            json={"path": path.replace("\\", "/")},
         )
         try:
             response.raise_for_status()

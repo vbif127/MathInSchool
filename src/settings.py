@@ -1,3 +1,4 @@
+import json
 import os
 from collections import OrderedDict
 from pathlib import Path
@@ -16,4 +17,4 @@ SEPARATOR = env.get("SPLIT_PARAGRAPH_SYMBOL")
 NOT_SELECTION_ITEM = "Not selection item"
 NOT_SELECTION_BOOK = "Not selection book"
 
-CONFIG = requests.get(f"{SERVER}/config").json(object_pairs_hook=OrderedDict)
+CONFIG: OrderedDict = requests.get(f"{SERVER}/config").json(object_pairs_hook=OrderedDict)

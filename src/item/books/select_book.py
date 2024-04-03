@@ -16,7 +16,6 @@ class HandleSelectionBook(UseUi):
         self.content_builder: ContentBuilder | None = None
 
     def handle_selection_book(self, item: QListWidgetItem) -> None:
-        print(131)
         if item is None:
             return
         GlobalStateStorage.selection_book = item.data(0)

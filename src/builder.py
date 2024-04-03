@@ -1,5 +1,6 @@
 import os
 
+import rich
 from PySide6.QtWidgets import QTreeWidgetItem
 
 from src.item.books.content.select import HandlersContentSelectionConnector
@@ -18,7 +19,7 @@ class Builder(UseUi):
         translater = Translate(CONFIG)
         self.fill_manage_tree(translater)
 
-        for other, value in CONFIG["Other"].items():
+        for other, _ in CONFIG["Other"].items():
             twi_other = QTreeWidgetItem()
             twi_other.setText(0, translater.get_translate_item(other))
             twi_other.setData(0, 4, ["Other", other])
