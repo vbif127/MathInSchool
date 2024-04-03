@@ -12,7 +12,7 @@ class HandleSelectionBook(UseUi):
 
     def __init__(self, ui: Ui) -> None:
         super().__init__(ui)
-        
+
         self.content_builder: ContentBuilder | None = None
 
     def handle_selection_book(self, item: QListWidgetItem) -> None:

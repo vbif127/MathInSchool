@@ -18,13 +18,15 @@ class Builder(UseUi):
         translater = Translate(CONFIG)
         self.fill_manage_tree(translater)
 
-        for other, _ in CONFIG["Other"]["OGE"].items():
-            ...
+        for other, value in CONFIG["Other"].items():
+            twi_other = QTreeWidgetItem()
+            twi_other.setText(0, translater.get_translate_item(other))
+            twi_other.setData(0, 4, ["Other", other])
+            self.ui.treeWidget.addTopLevelItem(twi_other)
 
         self.handle_selection_book: HandleSelectionBook | None = None
         self.handle_selection_item: HandleSelectionItem | None = None
         self.handlers_content_selection_connector: HandlersContentSelectionConnector | None = None
-        print(12)
 
         self.show_books = ShowBooks(ui)
         self.ui.itemL.hide()
@@ -36,19 +38,21 @@ class Builder(UseUi):
         for class_, items in CONFIG["classes"].items():
             twi_class = QTreeWidgetItem()
             twi_class.setText(0, f"{class_} класс")
-            twi_class.setData(0, 3, f"{class_} class")
+            twi_class.setData(0, 4, f"{class_} class")
             for item in items.keys():
                 if item not in ["Algebra", "Geometry", "Mathematics"]:
                     continue
                 twi_item = QTreeWidgetItem(twi_class)
                 twi_item.setText(0, translater.get_translate_item(item))
-                twi_item.setData(0, 3, item)
+                twi_item.setData(0, 4, item)
+
                 base_tip = QTreeWidgetItem(twi_item)
                 base_tip.setText(0, "Базовый курс")
-                base_tip.setData(0, 3, [])
+                base_tip.setData(0, 4, [])
+
                 reinforce_tip = QTreeWidgetItem(twi_item)
                 reinforce_tip.setText(0, "Углублённый курс")
-                reinforce_tip.setData(0, 3, ["reinforce"])
+                reinforce_tip.setData(0, 4, ["reinforce"])
 
             self.ui.treeWidget.addTopLevelItem(twi_class)
 
@@ -66,7 +70,6 @@ class Builder(UseUi):
 
     def build(self) -> None:
         if self.handle_selection_item:
-            print(100)
             self.handle_selection_item.connect()
         if self.handle_selection_book:
             self.handle_selection_book.connect()

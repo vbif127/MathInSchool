@@ -1,5 +1,5 @@
 from PySide6.QtCore import QPoint, Qt
-from PySide6.QtGui import QMouseEvent
+from PySide6.QtGui import QMouseEvent, QIcon
 from PySide6.QtWidgets import QMainWindow
 
 from src.builder import Builder
@@ -18,6 +18,7 @@ class MathInSchool(QMainWindow):
 
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowIcon(QIcon("icon.ico"))
 
         self.clicked_connect_to_control_window_buttons()
 

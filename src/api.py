@@ -23,6 +23,7 @@ class Api:
 
     def get_file(self, path: str) -> list[str] | list:
         file_path = PathToFile(path)
+        print(file_path)
 
         response = requests.get(
             f"{self.server}/file/{self.id}",
@@ -35,15 +36,13 @@ class Api:
 
         return install_and_extract_files(response)
 
-    def get_json_book(self, active_item: SelectionItem, book_identifier: str, is_oge: bool = False) -> dict:
-        print(active_item)
+    def get_json_book(self, active_item: SelectionItem, book_identifier: str) -> dict:
         translated_book_name, translated_item = self.get_translated(
             active_item,
             book_identifier,
         )
-        queri_type = "OGE" if is_oge else f"{active_item.class_} class"
-
-        response = requests.get(f"{SERVER}/json/{queri_type}/{translated_item}/{translated_book_name}")
+        print(f"{SERVER}/json/{active_item.root_dir}/{translated_item}/{translated_book_name}")
+        response = requests.get(f"{SERVER}/json/{active_item.root_dir}/{translated_item}/{translated_book_name}")
 
         if response.status_code != 200:
             raise requests.HTTPError(response.text)
@@ -56,10 +55,11 @@ class Api:
     ) -> tuple[str, str]:
 
         translated_book_name = self.translate.get_translate_book(
-            selection_item.text,
+            selection_item.item,
             book_identifier,
-            selection_item.class_,
+            selection_item.folder,
+            selection_item.root_dir_json,
         )
-        translated_subject = self.translate.get_translate_item(selection_item.text)
+        translated_subject = self.translate.get_translate_item(selection_item.item)
 
         return translated_book_name, translated_subject

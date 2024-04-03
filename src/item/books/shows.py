@@ -21,8 +21,10 @@ class ShowBooks(UseUi):
         if GlobalStateStorage.selection_item is None:
             raise NotSelectionItemError(NOT_SELECTION_ITEM)
 
-        translate_item = self.translator.get_translate_item(GlobalStateStorage.selection_item.text)
-        books: dict[str, dict] = CONFIG["classes"][f"{GlobalStateStorage.selection_item.class_}"][f"{translate_item}"]
+        translate_item = self.translator.get_translate_item(GlobalStateStorage.selection_item.item)
+
+        books: dict[str, dict] = CONFIG[GlobalStateStorage.selection_item.root_dir_json]\
+            [f"{GlobalStateStorage.selection_item.folder}"][f"{translate_item}"]
 
         return list(filter(self.filter_books, map(self.map_book, books.items())))
 

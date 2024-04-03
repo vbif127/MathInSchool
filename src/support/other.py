@@ -7,6 +7,7 @@ from tkinter import messagebox
 from typing import Any
 
 import requests
+from PySide6.QtWidgets import QTreeWidgetItem
 from requests import RequestException
 
 from src.settings import TMP
@@ -161,15 +162,9 @@ class Translate:
     def get_translate_item(self, item: str) -> str:
         return self.config["translation"].get(item, 'Не выбран урок')
 
-    def get_translate_book(self, item: str, book_name: str, class_: int | str, oge: bool = False) -> str:
+    def get_translate_book(self, item: str, book_name: str, folder: int | str, root_dir: str = "classes") -> str:
         item = self.get_translate_item(item)
-        return (
-            self.config["oge"][item][book_name]["file"]
-            if oge
-            else self.config["classes"][f"{class_}"][
-                item
-            ][book_name]["file"]
-        )
+        return self.config[root_dir][f"{folder}"][item][book_name]["file"]
 
 
 def web_view(self: object, urls: MyIter | str) -> None:
@@ -206,3 +201,14 @@ def install_and_open_video(url: str) -> None:
 def find_item_in_str(finding_it: Any, it: str, flag: re.RegexFlag = re.IGNORECASE) \
         -> list[str | None]:
     return re.findall(f".*{finding_it}.*", it, flag)
+
+
+def get_nesting_level(item: QTreeWidgetItem) -> int:
+    level = 1
+    current_parent = item.parent()
+
+    while current_parent is not None:
+        current_parent = current_parent.parent()
+        level += 1
+
+    return level

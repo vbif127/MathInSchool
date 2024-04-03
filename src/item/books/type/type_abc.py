@@ -51,7 +51,6 @@ class Image:
         return self.path
 
 
-
 @define
 class Book:
     active_item: SelectionItem
