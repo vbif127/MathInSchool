@@ -8,3 +8,4 @@ output
 dist
 conf.json
 build
+*\__pycache__

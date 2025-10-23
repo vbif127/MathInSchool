@@ -1,3 +1,5 @@
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QTextOption
 from PySide6.QtWidgets import QLabel, QPlainTextEdit, QVBoxLayout, QWidget
 
 from src.api import Api
@@ -9,7 +11,6 @@ class BookWidgetItem(QWidget):
         super().__init__()
         self.setMaximumWidth(200)
         self.setMaximumHeight(380)
-
         self.vbl = QVBoxLayout()
         self.book = book
         self.api = Api()
@@ -27,7 +28,14 @@ class BookWidgetItem(QWidget):
     def _create_description_book_widget(book: Book) -> QPlainTextEdit:
         description_book = QPlainTextEdit()
         description_book.setReadOnly(True)
+        # text = book.description.split("\n")
+        # for line in text:
+        #     description_book.appendPlainText(f"{line.strip():/^15}")
+        description_book.setWordWrapMode(QTextOption.WrapMode.WordWrap)
         description_book.setPlainText(book.description)
+
+        description_book.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        description_book.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         return description_book
 
     @staticmethod
@@ -37,4 +45,16 @@ class BookWidgetItem(QWidget):
         return book_image_label
 
     def show_image(self) -> None:
-        self.book_image_label.setStyleSheet(f"border-image: url('{self.book.image}');")
+        path = self.book.image.path
+        self.book_image_label.setStyleSheet(
+            f"""
+            QLabel{{
+                border: 20px solid;
+                border-image: url('{path}')
+            }}
+            QLabel:hover{{
+                border: 1px solid;
+            }}
+            """,
+        )
+        # self.book_image_label.setStyleSheet(f"border-image: url('{path}');")

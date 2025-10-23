@@ -1,3 +1,4 @@
+import re
 from collections import defaultdict
 from collections.abc import Iterable
 
@@ -40,6 +41,8 @@ class BaseParagraphsConstructor(ParagraphConstructor):
         child_item_text = self.construct_paragraph_text(paragraph, paragraph_data)
         child_item = QTreeWidgetItem()
         child_item.setText(0, child_item_text)
+        child_item.setToolTip(0, f'{len([it for it in paragraph_data.split(" ???? ")[1:] if re.findall(r"http", it)])}'
+                                 f' видео')
         return child_item, child_item_text
 
     def construct_paragraph_text(self, paragraph: str, paragraph_data: str) -> str:

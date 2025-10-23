@@ -35,7 +35,7 @@ class NewContent(Content):
     def __attrs_post_init__(self):
         self.paragraphs = self.__convert_paragraphs(self.json.get("Paragraphs"))
 
-    def __convert_paragraphs(self, data: dict) ->\
+    def __convert_paragraphs(self, data: dict) -> \
             dict[SubjectText, dict[ParagraphText, NewParagraphData | BaseParagraphData]]:
         subjects = {}
         for subject, paragraphs in data.items():

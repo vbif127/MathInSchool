@@ -24,22 +24,33 @@ class HandleSelectionItem(UseUi):
             return
         self.last_item = item
         nesting_level = get_nesting_level(item)
+
         match nesting_level:
             case 1 if "Other" in item.data(0, 4):
                 selection_item = SelectionItem(
                     item="Математика",
                     folder=item.data(0, 4)[1],
-                    filter_tags=None,
+                    filter_tags=item.data(0, 4)[2],
                     root_dir_json="Other",
                     root_dir=item.data(0, 4)[1],
                 )
                 self.ui.itemL.setText(f"{self.translater.get_translate_item(item.data(0, 4)[1])}. Математике")
+            case 2 if "Other" in item.data(0, 4):
+                selection_item = SelectionItem(
+                    item="Математика",
+                    folder=item.data(0, 4)[1],
+                    filter_tags=item.data(0, 4)[2],
+                    root_dir_json="Other",
+                    root_dir=item.data(0, 4)[1],
+                )
+                self.ui.itemL.setText(f"{self.translater.get_translate_item(item.data(0, 4)[1])}."
+                                      f"{item.text(0)} по математике")
             case 2:
                 class_ = re.findall(r"\d+", item.parent().text(0))[0]
                 selection_item = SelectionItem(
                     item=item.text(0),
                     folder=class_,
-                    filter_tags=[],
+                    filter_tags=None,
                     root_dir=f"{class_} class",
                 )
                 self.ui.itemL.setText(f"{selection_item.item}. {selection_item.folder} класс")
@@ -59,7 +70,6 @@ class HandleSelectionItem(UseUi):
         # self.set_info_text(item)
         self.ui.itemL.show()
         self.show_books.show()
-
 
     def connect(self) -> None:
         self.ui.treeWidget.currentItemChanged.connect(self.handle_selection_item)

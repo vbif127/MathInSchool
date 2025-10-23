@@ -1,3 +1,4 @@
+import re
 from collections.abc import Iterable
 from typing import Any
 
@@ -16,6 +17,7 @@ class NewNumbersConstructor(NumbersConstructor):
             number_it = QTreeWidgetItem()
             number_it.setText(0, number.replace('N.', '№:'))
             number_it.setData(0, 1, number_data)
+            # child_item.setToolTip(0, f'{number_data["answers"]} видео.')
 
             yield number_it
 
@@ -32,6 +34,7 @@ class NewParagraphConstructor(ParagraphConstructor):
 
             child_item = QTreeWidgetItem()
             child_item.setText(0, self.construct_paragraph_text(paragraph))
+            child_item.setToolTip(0, f'{len(paragraph_data["videos"])} видео.')
             for number_it in self.numbers_constructor.build(paragraph_data["numbers"]):
                 child_item.addChild(number_it)
 

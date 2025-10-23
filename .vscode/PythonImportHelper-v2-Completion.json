@@ -1,0 +1,3494 @@
+[
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "NewType",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QCheckBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGridLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPlainTextEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QAbstractItemView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QButtonGroup",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QCheckBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHeaderView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPlainTextEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSpacerItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QStackedWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTextBrowser",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_BOOK",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_BOOK",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_PATH",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SEPARATOR",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_BOOK",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_PATH",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_BOOK",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_ITEM",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TMP",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TMP",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ID",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SERVER",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_PATH",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "isExtraImport": true,
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "isExtraImport": true,
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionBookError",
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "isExtraImport": true,
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionBookError",
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "isExtraImport": true,
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionBookError",
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "isExtraImport": true,
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionBookError",
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "isExtraImport": true,
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionItemError",
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "isExtraImport": true,
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "isExtraImport": true,
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui",
+        "importPath": "ui",
+        "description": "ui",
+        "isExtraImport": true,
+        "detail": "ui",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "namedtuple",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "NumbersConstructor",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumbersFiller",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphConstructor",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphsFiller",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "convert_strings_to_tree_widget_items",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumbersConstructor",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphConstructor",
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphsFiller",
+        "importPath": "src.item.books.content",
+        "description": "src.item.books.content",
+        "isExtraImport": true,
+        "detail": "src.item.books.content",
+        "documentation": {}
+    },
+    {
+        "label": "BaseContentBuilder",
+        "importPath": "src.item.books.content",
+        "description": "src.item.books.content",
+        "isExtraImport": true,
+        "detail": "src.item.books.content",
+        "documentation": {}
+    },
+    {
+        "label": "ContentBuilder",
+        "importPath": "src.item.books.content",
+        "description": "src.item.books.content",
+        "isExtraImport": true,
+        "detail": "src.item.books.content",
+        "documentation": {}
+    },
+    {
+        "label": "NewContentBuilder",
+        "importPath": "src.item.books.content",
+        "description": "src.item.books.content",
+        "isExtraImport": true,
+        "detail": "src.item.books.content",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphData",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "SubjectText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "TypesBooks",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphData",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Content",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumberText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "SubjectText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Content",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumberText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "SubjectText",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Video",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphData",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "TypesBooks",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NewParagraphData",
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewParagraphData",
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewBook",
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "src.api",
+        "description": "src.api",
+        "isExtraImport": true,
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "src.api",
+        "description": "src.api",
+        "isExtraImport": true,
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "src.api",
+        "description": "src.api",
+        "isExtraImport": true,
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "src.api",
+        "description": "src.api",
+        "isExtraImport": true,
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "src.api",
+        "description": "src.api",
+        "isExtraImport": true,
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_string",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Json",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Json",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Json",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Translate",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Translate",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "get_nesting_level",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Json",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Translate",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Translate",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "web_view",
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "isExtraImport": true,
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "PathToFile",
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "isExtraImport": true,
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "PathToFile",
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "isExtraImport": true,
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "install_and_extract_files",
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "isExtraImport": true,
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "PathToFile",
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "isExtraImport": true,
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceAnswerWindow",
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "isExtraImport": true,
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceFileWindow",
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "isExtraImport": true,
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceVideoWindow",
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "isExtraImport": true,
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "HandlerContentSelection",
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "adaptation_paragraph",
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "separation_of_files_and_urls",
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "split_by_separator",
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseNumberData",
+        "importPath": "src.item.books.type.type_base",
+        "description": "src.item.books.type.type_base",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseBook",
+        "importPath": "src.item.books.type.type_base",
+        "description": "src.item.books.type.type_base",
+        "isExtraImport": true,
+        "detail": "src.item.books.type.type_base",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "define",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "define",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "define",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "attrs",
+        "description": "attrs",
+        "isExtraImport": true,
+        "detail": "attrs",
+        "documentation": {}
+    },
+    {
+        "label": "SelectionItem",
+        "importPath": "src.support.active",
+        "description": "src.support.active",
+        "isExtraImport": true,
+        "detail": "src.support.active",
+        "documentation": {}
+    },
+    {
+        "label": "SelectionItem",
+        "importPath": "src.support.active",
+        "description": "src.support.active",
+        "isExtraImport": true,
+        "detail": "src.support.active",
+        "documentation": {}
+    },
+    {
+        "label": "SelectionItem",
+        "importPath": "src.support.active",
+        "description": "src.support.active",
+        "isExtraImport": true,
+        "detail": "src.support.active",
+        "documentation": {}
+    },
+    {
+        "label": "SelectionItem",
+        "importPath": "src.support.active",
+        "description": "src.support.active",
+        "isExtraImport": true,
+        "detail": "src.support.active",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "BookWidgetItem",
+        "importPath": "ui.custom_widgets",
+        "description": "ui.custom_widgets",
+        "isExtraImport": true,
+        "detail": "ui.custom_widgets",
+        "documentation": {}
+    },
+    {
+        "label": "ShowBooks",
+        "importPath": "src.item.books.shows",
+        "description": "src.item.books.shows",
+        "isExtraImport": true,
+        "detail": "src.item.books.shows",
+        "documentation": {}
+    },
+    {
+        "label": "ShowBooks",
+        "importPath": "src.item.books.shows",
+        "description": "src.item.books.shows",
+        "isExtraImport": true,
+        "detail": "src.item.books.shows",
+        "documentation": {}
+    },
+    {
+        "label": "define",
+        "importPath": "attr",
+        "description": "attr",
+        "isExtraImport": true,
+        "detail": "attr",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "attr",
+        "description": "attr",
+        "isExtraImport": true,
+        "detail": "attr",
+        "documentation": {}
+    },
+    {
+        "label": "contextlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "webbrowser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "RequestException",
+        "importPath": "requests",
+        "description": "requests",
+        "isExtraImport": true,
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "MyIter",
+        "importPath": "src.support.my_iter",
+        "description": "src.support.my_iter",
+        "isExtraImport": true,
+        "detail": "src.support.my_iter",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "ui.web_view.base",
+        "description": "ui.web_view.base",
+        "isExtraImport": true,
+        "detail": "ui.web_view.base",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "zipfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "HandlersContentSelectionConnector",
+        "importPath": "src.item.books.content.select",
+        "description": "src.item.books.content.select",
+        "isExtraImport": true,
+        "detail": "src.item.books.content.select",
+        "documentation": {}
+    },
+    {
+        "label": "HandleSelectionBook",
+        "importPath": "src.item.books.select_book",
+        "description": "src.item.books.select_book",
+        "isExtraImport": true,
+        "detail": "src.item.books.select_book",
+        "documentation": {}
+    },
+    {
+        "label": "HandleSelectionItem",
+        "importPath": "src.item.select_item",
+        "description": "src.item.select_item",
+        "isExtraImport": true,
+        "detail": "src.item.select_item",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "dotenv_values",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "YouTube",
+        "importPath": "pytube",
+        "description": "pytube",
+        "isExtraImport": true,
+        "detail": "pytube",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "importPath": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "description": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "isExtraImport": true,
+        "detail": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "documentation": {}
+    },
+    {
+        "label": "QCoreApplication",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDate",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDateTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QLocale",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QMetaObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QRect",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QUrl",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QUrl",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QCoreApplication",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDate",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDateTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QLocale",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QMetaObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QRect",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QUrl",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QCoreApplication",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDate",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDateTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QLocale",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QMetaObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QRect",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QUrl",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QBrush",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QConicalGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QCursor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFontDatabase",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QKeySequence",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QLinearGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QRadialGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTransform",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QBrush",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QConicalGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QCursor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFontDatabase",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QKeySequence",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QLinearGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QRadialGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTransform",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTextOption",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QBrush",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QConicalGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QCursor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFontDatabase",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QKeySequence",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QLinearGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QRadialGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTransform",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QMouseEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QWebEngineView",
+        "importPath": "PySide6.QtWebEngineWidgets",
+        "description": "PySide6.QtWebEngineWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWebEngineWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "Builder",
+        "importPath": "src.builder",
+        "description": "src.builder",
+        "isExtraImport": true,
+        "detail": "src.builder",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "MathInSchool",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "StringConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class StringConstructor:\n    @abstractmethod\n    def build(self, items: dict) -> Iterable:\n        ...\nclass Filler(UseUi):\n    def __init__(self, ui: Ui, builder: StringConstructor) -> None:\n        super().__init__(ui)\n        self.builder = builder\n    @abstractmethod\n    def __call__(self) -> None:",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Filler",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class Filler(UseUi):\n    def __init__(self, ui: Ui, builder: StringConstructor) -> None:\n        super().__init__(ui)\n        self.builder = builder\n    @abstractmethod\n    def __call__(self) -> None:\n        self.ui.book_contentTW.clear()\n    def connect(self, btn: QPushButton, line_edit: QLineEdit) -> None:\n        btn.clicked.connect(self.__call__)\n        line_edit.textEdited.connect(self.search)",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphsFiller",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class ParagraphsFiller(Filler, ABC):\n    def __call__(self) -> None:\n        super().__call__()\n        if not GlobalStateStorage.selection_book:\n            raise NotSelectionBookError(NOT_SELECTION_BOOK)\n        self.ui.answersCB.setEnabled(False)\n        self.ui.answersCB.hide()\n        self.fill(self.builder.build(GlobalStateStorage.selection_book.content.paragraphs))\n    def fill(self, built_paragraphs: Iterable) -> None:\n        self.ui.searchLE.hide()",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumbersFiller",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class NumbersFiller(Filler, ABC):\n    def __call__(self) -> None:\n        if not GlobalStateStorage.selection_book:\n            raise NotSelectionBookError(NOT_SELECTION_BOOK)\n        self.ui.answersCB.setEnabled(True)\n        self.ui.answersCB.show()\n        self.fill(self.builder.build(GlobalStateStorage.selection_book.content.numbers))\n    def fill(self, built_numbers: Iterable) -> None:\n        self.ui.book_contentTW.clear()\n        self.ui.searchLE.show()",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class ParagraphConstructor(StringConstructor):\n    @abstractmethod\n    def construct_paragraphs(self, tw_item: QTreeWidgetItem, paragraphs: dict) -> None:\n        ...\n    @abstractmethod\n    def construct_paragraph_text(self, paragraph: str, paragraph_data: Any) -> str:\n        ...\nclass NumbersConstructor(StringConstructor, ABC):\n    ...",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumbersConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "class NumbersConstructor(StringConstructor, ABC):\n    ...",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "convert_strings_to_tree_widget_items",
+        "kind": 2,
+        "importPath": "src.item.books.content.fill.fill_abc",
+        "description": "src.item.books.content.fill.fill_abc",
+        "peekOfCode": "def convert_strings_to_tree_widget_items(strings: Iterable[str]) -> tuple[QTreeWidgetItem, ...]:\n    \"\"\"Convert a list of strings to a list of QTreeWidgetItem objects.\n    :param strings: A list of strings to be converted.\n    :type strings: list[str]\n    :return: A list of QTreeWidgetItem objects created from the input strings.\n    :rtype: list[QTreeWidgetItem]\n    \"\"\"\n    return tuple(QTreeWidgetItem([string]) for string in strings)\nclass ParagraphConstructor(StringConstructor):\n    @abstractmethod",
+        "detail": "src.item.books.content.fill.fill_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphsConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_base",
+        "description": "src.item.books.content.fill.fill_base",
+        "peekOfCode": "class BaseParagraphsConstructor(ParagraphConstructor):\n    def __init__(self, include_desc: bool = True) -> None:\n        super().__init__()\n        self.include_desc = include_desc\n        self.items: dict[str, list[str]] = defaultdict(list)\n    def construct_paragraphs(\n            self,\n            top_level_item: QTreeWidgetItem,\n            paragraphs: dict[str, str],\n    ) -> None:",
+        "detail": "src.item.books.content.fill.fill_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseNumbersConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_base",
+        "description": "src.item.books.content.fill.fill_base",
+        "peekOfCode": "class BaseNumbersConstructor(NumbersConstructor):\n    def build(self, numbers: Iterable) -> Iterable:\n        return convert_strings_to_tree_widget_items(tuple(\n            it.replace(\"N.\", \"№:\") for it in numbers\n        ))\n# book_contentTW\nclass BaseParagraphsFiller(ParagraphsFiller):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui, BaseParagraphsConstructor())\n    def search(self, text: str) -> None:",
+        "detail": "src.item.books.content.fill.fill_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphsFiller",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_base",
+        "description": "src.item.books.content.fill.fill_base",
+        "peekOfCode": "class BaseParagraphsFiller(ParagraphsFiller):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui, BaseParagraphsConstructor())\n    def search(self, text: str) -> None:\n        ...\nclass BaseNumbersFiller(NumbersFiller):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui, BaseNumbersConstructor())\n    def search(self, text: str) -> None:\n        if not GlobalStateStorage.selection_book:",
+        "detail": "src.item.books.content.fill.fill_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseNumbersFiller",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_base",
+        "description": "src.item.books.content.fill.fill_base",
+        "peekOfCode": "class BaseNumbersFiller(NumbersFiller):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui, BaseNumbersConstructor())\n    def search(self, text: str) -> None:\n        if not GlobalStateStorage.selection_book:\n            raise NotSelectionBookError(NOT_SELECTION_BOOK)\n        if not self.ui.numbersPB.isChecked():\n            return\n        self.fill(list(filter(\n            self.find_item_filter(text),",
+        "detail": "src.item.books.content.fill.fill_base",
+        "documentation": {}
+    },
+    {
+        "label": "NewNumbersConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_new",
+        "description": "src.item.books.content.fill.fill_new",
+        "peekOfCode": "class NewNumbersConstructor(NumbersConstructor):\n    def build(self, numbers: dict) -> Iterable:\n        for number, number_data in numbers.items():\n            number_it = QTreeWidgetItem()\n            number_it.setText(0, number.replace('N.', '№:'))\n            number_it.setData(0, 1, number_data)\n            # child_item.setToolTip(0, f'{number_data[\"answers\"]} видео.')\n            yield number_it\nclass NewParagraphConstructor(ParagraphConstructor):\n    def __init__(self):",
+        "detail": "src.item.books.content.fill.fill_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewParagraphConstructor",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_new",
+        "description": "src.item.books.content.fill.fill_new",
+        "peekOfCode": "class NewParagraphConstructor(ParagraphConstructor):\n    def __init__(self):\n        self.numbers_constructor = NewNumbersConstructor()\n    def construct_paragraphs(self, top_level_item: QTreeWidgetItem,\n                             paragraphs: dict[ParagraphText, NewParagraphData | BaseParagraphData]) -> None:\n        for paragraph, paragraph_data in paragraphs.items():\n            if paragraph == \"title\":\n                continue\n            child_item = QTreeWidgetItem()\n            child_item.setText(0, self.construct_paragraph_text(paragraph))",
+        "detail": "src.item.books.content.fill.fill_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewParagraphsFiller",
+        "kind": 6,
+        "importPath": "src.item.books.content.fill.fill_new",
+        "description": "src.item.books.content.fill.fill_new",
+        "peekOfCode": "class NewParagraphsFiller(ParagraphsFiller):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui, NewParagraphConstructor())\n    def fill(self, built_paragraphs: Iterable) -> None:\n        super_call = super().fill(built_paragraphs)\n        self.ui.answersCB.show()\n        self.ui.answersCB.setEnabled(True)\n        return super_call\n    def search(self, text: str) -> None:\n        ...",
+        "detail": "src.item.books.content.fill.fill_new",
+        "documentation": {}
+    },
+    {
+        "label": "HandlerContentSelection",
+        "kind": 6,
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "peekOfCode": "class HandlerContentSelection(UseUi):\n    def __init__(self, ui: Ui, api: Api, cb_btn: QPushButton) -> None:\n        super().__init__(ui)\n        self.api = api\n        self.cb_btn = cb_btn\n    @abstractmethod\n    def __call__(self, item: QTreeWidgetItem, column: int) -> None:\n        ...\n    def view(self, item: QTreeWidgetItem, urls: list[str], files: list[str], check_box: QCheckBox) -> None:\n        self.view_video(item, urls, check_box)",
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "separation_of_files_and_urls",
+        "kind": 2,
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "peekOfCode": "def separation_of_files_and_urls(scraped: list) -> tuple[list, list]:\n    urls = [url for url in scraped if url.startswith(\"http\")]\n    files = [file for file in scraped if not file.startswith(\"http\")]\n    return files, urls\ndef split_by_separator(item: str) -> list:\n    return item.split(SEPARATOR)\ndef adaptation_paragraph(paragraph: str) -> str:\n    return re.sub(r\"§\\.?\\.?\", \"P.\", paragraph)\nclass HandlerContentSelection(UseUi):\n    def __init__(self, ui: Ui, api: Api, cb_btn: QPushButton) -> None:",
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "split_by_separator",
+        "kind": 2,
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "peekOfCode": "def split_by_separator(item: str) -> list:\n    return item.split(SEPARATOR)\ndef adaptation_paragraph(paragraph: str) -> str:\n    return re.sub(r\"§\\.?\\.?\", \"P.\", paragraph)\nclass HandlerContentSelection(UseUi):\n    def __init__(self, ui: Ui, api: Api, cb_btn: QPushButton) -> None:\n        super().__init__(ui)\n        self.api = api\n        self.cb_btn = cb_btn\n    @abstractmethod",
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "adaptation_paragraph",
+        "kind": 2,
+        "importPath": "src.item.books.content.select.select_abc",
+        "description": "src.item.books.content.select.select_abc",
+        "peekOfCode": "def adaptation_paragraph(paragraph: str) -> str:\n    return re.sub(r\"§\\.?\\.?\", \"P.\", paragraph)\nclass HandlerContentSelection(UseUi):\n    def __init__(self, ui: Ui, api: Api, cb_btn: QPushButton) -> None:\n        super().__init__(ui)\n        self.api = api\n        self.cb_btn = cb_btn\n    @abstractmethod\n    def __call__(self, item: QTreeWidgetItem, column: int) -> None:\n        ...",
+        "detail": "src.item.books.content.select.select_abc",
+        "documentation": {}
+    },
+    {
+        "label": "HandlerContentSelectionNumber",
+        "kind": 6,
+        "importPath": "src.item.books.content.select.select_base",
+        "description": "src.item.books.content.select.select_base",
+        "peekOfCode": "class HandlerContentSelectionNumber(HandlerContentSelection):\n    def __call__(self, item: QTreeWidgetItem, _: int) -> None:\n        if not self.cb_btn.isChecked():\n            return\n        number = self.get_number(item)\n        self.view_files(item, [number.path_to_question])\n        self.view_answers(item, number)\n    def view_answers(self, item: QTreeWidgetItem, number: BaseNumberData) -> None:\n        files_result, urls = separation_of_files_and_urls(split_by_separator(number.path_to_answers))\n        self.view_video(item, urls, self.ui.videoCB)",
+        "detail": "src.item.books.content.select.select_base",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphGetter",
+        "kind": 6,
+        "importPath": "src.item.books.content.select.select_base",
+        "description": "src.item.books.content.select.select_base",
+        "peekOfCode": "class ParagraphGetter:\n    @staticmethod\n    def get_adaptation_topic(topic: str) -> str:\n        return topic.split(\":\")[0].replace(\"Глава\", \"subject\")\n    @staticmethod\n    def get_paragraph(topic: str, paragraph: str) -> dict | str:\n        if GlobalStateStorage.selection_book is None:\n            raise NotSelectionBookError(NOT_SELECTION_BOOK)\n        paragraphs = GlobalStateStorage.selection_book.content.paragraphs[topic]\n        adapted_paragraph = adaptation_paragraph(paragraph)",
+        "detail": "src.item.books.content.select.select_base",
+        "documentation": {}
+    },
+    {
+        "label": "WorkWithParagraph",
+        "kind": 6,
+        "importPath": "src.item.books.content.select.select_base",
+        "description": "src.item.books.content.select.select_base",
+        "peekOfCode": "class WorkWithParagraph:\n    def __init__(self):\n        self.paragraph_getter = ParagraphGetter()\n    def get_files_and_urls_or_numbers(self, item: QTreeWidgetItem, is_paragraph: bool = False) -> \\\n            dict[str, dict[str, list[str]]] | tuple[list[str], list[str]]:\n        if GlobalStateStorage.selection_book.type_ == TypesBooks.NEW.value:\n            files, urls, numbers = self.get_urls_and_files_from_new_paragraph(item)\n            if not is_paragraph:\n                return numbers\n            return files, urls",
+        "detail": "src.item.books.content.select.select_base",
+        "documentation": {}
+    },
+    {
+        "label": "HandlerContentSelectionParagraph",
+        "kind": 6,
+        "importPath": "src.item.books.content.select.select_base",
+        "description": "src.item.books.content.select.select_base",
+        "peekOfCode": "class HandlerContentSelectionParagraph(HandlerContentSelection):\n    def __init__(self, ui: Ui, api: Api, cb_btn: QPushButton):\n        super().__init__(ui, api, cb_btn)\n        self.work_with_paragraph = WorkWithParagraph()\n    def __call__(self, item: QTreeWidgetItem, _: int) -> None:\n        if not self.cb_btn.isChecked():\n            return\n        if item.parent() is None:\n            return\n        if GlobalStateStorage.selection_book.type_ == TypesBooks.NEW.value:",
+        "detail": "src.item.books.content.select.select_base",
+        "documentation": {}
+    },
+    {
+        "label": "TypesBooks",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "class TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:\n    json: Json\n    paragraphs: Any = field(init=False)\n    numbers: Any = field(init=False)\nclass Image:\n    def __init__(self, path: str):",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Content",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "class Content:\n    json: Json\n    paragraphs: Any = field(init=False)\n    numbers: Any = field(init=False)\nclass Image:\n    def __init__(self, path: str):\n        self.api = Api()\n        self._path = path\n    def get_image(self, path: str) -> str:\n        image = self.api.get_file(path)",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "class Image:\n    def __init__(self, path: str):\n        self.api = Api()\n        self._path = path\n    def get_image(self, path: str) -> str:\n        image = self.api.get_file(path)\n        if not image:\n            return os.path.join(PathToFile(BASE_PATH).fullpath(), \"assets\\\\default.png\").replace(\"\\\\\", \"/\")\n        return image[0].replace(\"\\\\\", \"/\")\n    @property",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "class Book:\n    active_item: SelectionItem\n    id_: str\n    file: str\n    type_: str\n    image: Image | str = field(converter=Image)\n    description: str\n    tags: list[str] = field(default=[])\n    api: Api = field(init=False, default=Api())\n    __content: Content = field(init=False, repr=False, default=None)  # type: ignore",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "File = TypeVar(\"File\", bound=str)\nVideo = TypeVar(\"Video\", bound=str)\nQuestion = TypeVar(\"Question\", bound=str)\nAnswer = TypeVar(\"Answer\", bound=str)\nSubjectText = TypeVar(\"SubjectText\", bound=str)\nParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Video",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "Video = TypeVar(\"Video\", bound=str)\nQuestion = TypeVar(\"Question\", bound=str)\nAnswer = TypeVar(\"Answer\", bound=str)\nSubjectText = TypeVar(\"SubjectText\", bound=str)\nParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "Question = TypeVar(\"Question\", bound=str)\nAnswer = TypeVar(\"Answer\", bound=str)\nSubjectText = TypeVar(\"SubjectText\", bound=str)\nParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "Answer = TypeVar(\"Answer\", bound=str)\nSubjectText = TypeVar(\"SubjectText\", bound=str)\nParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "SubjectText",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "SubjectText = TypeVar(\"SubjectText\", bound=str)\nParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:\n    json: Json",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "ParagraphText",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "ParagraphText = TypeVar(\"ParagraphText\", bound=str)\nBaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:\n    json: Json\n    paragraphs: Any = field(init=False)",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseParagraphData",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "BaseParagraphData = TypeVar(\"BaseParagraphData\", bound=str)\nNumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:\n    json: Json\n    paragraphs: Any = field(init=False)\n    numbers: Any = field(init=False)",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "NumberText",
+        "kind": 5,
+        "importPath": "src.item.books.type.type_abc",
+        "description": "src.item.books.type.type_abc",
+        "peekOfCode": "NumberText = TypeVar(\"NumberText\", bound=str)\nclass TypesBooks(Enum):\n    BASE = \"base\"\n    NEW = \"new\"\n@define\nclass Content:\n    json: Json\n    paragraphs: Any = field(init=False)\n    numbers: Any = field(init=False)\nclass Image:",
+        "detail": "src.item.books.type.type_abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseNumberData",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_base",
+        "description": "src.item.books.type.type_base",
+        "peekOfCode": "class BaseNumberData:\n    path_to_question: str\n    path_to_answers: str\n@define\nclass BaseContent(Content):\n    json: Json\n    paragraphs: dict[SubjectText, dict[ParagraphText, BaseParagraphData]] = field(init=False)\n    numbers: dict[NumberText, BaseNumberData] = field(init=False)\n    def __attrs_post_init__(self) -> None:\n        self.paragraphs = defaultdict(**self.json.get(\"Paragrafs\"))",
+        "detail": "src.item.books.type.type_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseContent",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_base",
+        "description": "src.item.books.type.type_base",
+        "peekOfCode": "class BaseContent(Content):\n    json: Json\n    paragraphs: dict[SubjectText, dict[ParagraphText, BaseParagraphData]] = field(init=False)\n    numbers: dict[NumberText, BaseNumberData] = field(init=False)\n    def __attrs_post_init__(self) -> None:\n        self.paragraphs = defaultdict(**self.json.get(\"Paragrafs\"))\n        self.numbers = self.__convert_numbers(self.json.get(\"Numbers\"))\n    def __convert_numbers(self, numbers: dict[NumberText, str]) -> dict[NumberText, BaseNumberData]:\n        return {\n            question: BaseNumberData(path_to_question, self.json[\"result\"][question])",
+        "detail": "src.item.books.type.type_base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseBook",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_base",
+        "description": "src.item.books.type.type_base",
+        "peekOfCode": "class BaseBook(Book):\n    __content: Content = field(init=False, repr=False, default=None)  # type: ignore\n    @property\n    def content(self) -> BaseContent:\n        if not self.__content:\n            json_book = self.api.get_json_book(\n                self.active_item,\n                self.id_,\n            )\n            self.__content = BaseContent(json_book)",
+        "detail": "src.item.books.type.type_base",
+        "documentation": {}
+    },
+    {
+        "label": "NewNumberData",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "peekOfCode": "class NewNumberData:\n    questions: list[Question]\n    answers: list[Answer]\nclass NewParagraphData(TypedDict):\n    files: list[File]\n    videos: list[Video]\n    numbers: dict[ParagraphText, dict[NumberText, NewNumberData]]\n@define\nclass NewContent(Content):\n    json: Json",
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewParagraphData",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "peekOfCode": "class NewParagraphData(TypedDict):\n    files: list[File]\n    videos: list[Video]\n    numbers: dict[ParagraphText, dict[NumberText, NewNumberData]]\n@define\nclass NewContent(Content):\n    json: Json\n    paragraphs: dict[SubjectText, dict[ParagraphText, NewParagraphData | BaseParagraphData]] = field(init=False)\n    def __attrs_post_init__(self):\n        self.paragraphs = self.__convert_paragraphs(self.json.get(\"Paragraphs\"))",
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewContent",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "peekOfCode": "class NewContent(Content):\n    json: Json\n    paragraphs: dict[SubjectText, dict[ParagraphText, NewParagraphData | BaseParagraphData]] = field(init=False)\n    def __attrs_post_init__(self):\n        self.paragraphs = self.__convert_paragraphs(self.json.get(\"Paragraphs\"))\n    def __convert_paragraphs(self, data: dict) -> \\\n            dict[SubjectText, dict[ParagraphText, NewParagraphData | BaseParagraphData]]:\n        subjects = {}\n        for subject, paragraphs in data.items():\n            subjects[subject] = {}",
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "NewBook",
+        "kind": 6,
+        "importPath": "src.item.books.type.type_new",
+        "description": "src.item.books.type.type_new",
+        "peekOfCode": "class NewBook(Book):\n    __content: NewContent = field(init=False, repr=False, default=None)\n    @property\n    def content(self) -> NewContent:\n        if not self.__content:\n            json_book = self.api.get_json_book(\n                self.active_item,\n                self.id_,\n            )\n            self.__content = NewContent(json_book)",
+        "detail": "src.item.books.type.type_new",
+        "documentation": {}
+    },
+    {
+        "label": "HandleSelectionBook",
+        "kind": 6,
+        "importPath": "src.item.books.select_book",
+        "description": "src.item.books.select_book",
+        "peekOfCode": "class HandleSelectionBook(UseUi):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui)\n        self.content_builder: ContentBuilder | None = None\n    def handle_selection_book(self, item: QListWidgetItem) -> None:\n        if item is None:\n            return\n        GlobalStateStorage.selection_book = item.data(0)\n        self.set_content_builder()\n        self.ui.stackedWidget_2.setCurrentIndex(1)",
+        "detail": "src.item.books.select_book",
+        "documentation": {}
+    },
+    {
+        "label": "ShowBooks",
+        "kind": 6,
+        "importPath": "src.item.books.shows",
+        "description": "src.item.books.shows",
+        "peekOfCode": "class ShowBooks(UseUi):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui)\n        self.translator = Translate(CONFIG)\n    def get_books(self) -> list[Book]:\n        if GlobalStateStorage.selection_item is None:\n            raise NotSelectionItemError(NOT_SELECTION_ITEM)\n        translate_item = self.translator.get_translate_item(GlobalStateStorage.selection_item.item)\n        books: dict[str, dict] = CONFIG[GlobalStateStorage.selection_item.root_dir_json] \\\n            [f\"{GlobalStateStorage.selection_item.folder}\"][f\"{translate_item}\"]",
+        "detail": "src.item.books.shows",
+        "documentation": {}
+    },
+    {
+        "label": "HandleSelectionItem",
+        "kind": 6,
+        "importPath": "src.item.select_item",
+        "description": "src.item.select_item",
+        "peekOfCode": "class HandleSelectionItem(UseUi):\n    def __init__(self, ui: Ui, show_books: ShowBooks) -> None:\n        super().__init__(ui)\n        self.last_item: QTreeWidgetItem | None = None\n        self.show_books = show_books\n        self.translater = Translate(CONFIG)\n    def handle_selection_item(self, item: QTreeWidgetItem) -> None:\n        if self.last_item == item:\n            return\n        self.last_item = item",
+        "detail": "src.item.select_item",
+        "documentation": {}
+    },
+    {
+        "label": "SelectionItem",
+        "kind": 6,
+        "importPath": "src.support.active",
+        "description": "src.support.active",
+        "peekOfCode": "class SelectionItem:\n    folder: str\n    item: str\n    filter_tags: list[str] = field(factory=list)\n    root_dir_json: str = field(default=\"classes\")\n    root_dir: str = field(default=\"class\")",
+        "detail": "src.support.active",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionItemError",
+        "kind": 6,
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "peekOfCode": "class NotSelectionItemError(Exception):\n    ...\nclass NotSelectionBookError(Exception):\n    ...",
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "NotSelectionBookError",
+        "kind": 6,
+        "importPath": "src.support.errors",
+        "description": "src.support.errors",
+        "peekOfCode": "class NotSelectionBookError(Exception):\n    ...",
+        "detail": "src.support.errors",
+        "documentation": {}
+    },
+    {
+        "label": "MyIter",
+        "kind": 6,
+        "importPath": "src.support.my_iter",
+        "description": "src.support.my_iter",
+        "peekOfCode": "class MyIter:\n    def __init__(self, _iter: Iterable, func: Callable = None, return_res_funk: bool = False) -> None:\n        self._iter = iter(_iter)\n        self.iter_obj = _iter\n        self.func = func\n        self.return_res_funk = return_res_funk\n        self.history: list = []\n    def __call__(\n            self,\n            _iter: Iterable = (),",
+        "detail": "src.support.my_iter",
+        "documentation": {}
+    },
+    {
+        "label": "Json",
+        "kind": 6,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "class Json:\n    import json as __json\n    def __init__(self, json_str: str | None = None, **json_dict_or_list) -> None:\n        if json_dict_or_list is None:\n            json_dict_or_list = {}\n        self.json_dict_or_list: dict = json_dict_or_list\n        self.json_str: str | None = json_str\n    def loads(self, json_str: str | None = None) -> dict:\n        \"\"\"Convert a JSON string to a dictionary or a list.\n        Parameters",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "Translate",
+        "kind": 6,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "class Translate:\n    def __init__(self, config: dict) -> None:\n        self.config = config\n    def get_translate_item(self, item: str) -> str:\n        return self.config[\"translation\"].get(item, 'Не выбран урок')\n    def get_translate_book(self, item: str, book_name: str, folder: int | str, root_dir: str = \"classes\") -> str:\n        item = self.get_translate_item(item)\n        return self.config[root_dir][f\"{folder}\"][item][book_name][\"file\"]\ndef web_view(self: object, urls: MyIter | str) -> None:\n    if isinstance(urls, MyIter):",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "batched",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def batched(lst: list, batch_size: int) -> list[list]:\n    return [lst[i: i + batch_size] for i in range(0, len(lst), batch_size)]\ndef is_int(value: Any) -> bool:\n    try:\n        return isinstance(int(value), int)\n    except ValueError:\n        return False\nclass Json:\n    import json as __json\n    def __init__(self, json_str: str | None = None, **json_dict_or_list) -> None:",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "is_int",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def is_int(value: Any) -> bool:\n    try:\n        return isinstance(int(value), int)\n    except ValueError:\n        return False\nclass Json:\n    import json as __json\n    def __init__(self, json_str: str | None = None, **json_dict_or_list) -> None:\n        if json_dict_or_list is None:\n            json_dict_or_list = {}",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "web_view",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def web_view(self: object, urls: MyIter | str) -> None:\n    if isinstance(urls, MyIter):\n        for url in urls():\n            webbrowser.open_new_tab(url)\n    else:\n        webbrowser.open_new_tab(urls)\n    # view = get_random_string()\n    # setattr(self, view, View(urls))\n    # getattr(self, view).show()\ndef get_random_string() -> str:",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_string",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def get_random_string() -> str:\n    view = \"\".join(random.sample(string.ascii_letters, 20))\n    return view\ndef install_and_open_video(url: str) -> None:\n    try:\n        response = requests.get(url)\n        response.raise_for_status()\n        path_to_video = os.path.join(TMP, f\"{''.join(random.sample(string.ascii_letters, 20))}.mp4\")\n        with open(path_to_video, \"wb\") as file:\n            file.write(response.content)",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "install_and_open_video",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def install_and_open_video(url: str) -> None:\n    try:\n        response = requests.get(url)\n        response.raise_for_status()\n        path_to_video = os.path.join(TMP, f\"{''.join(random.sample(string.ascii_letters, 20))}.mp4\")\n        with open(path_to_video, \"wb\") as file:\n            file.write(response.content)\n        os.startfile(path_to_video)\n    except RequestException as e:\n        messagebox.showerror(\"Error\", f\"Не получилось загрузить видео {e}\")",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "find_item_in_str",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def find_item_in_str(finding_it: Any, it: str, flag: re.RegexFlag = re.IGNORECASE) \\\n        -> list[str | None]:\n    return re.findall(f\".*{finding_it}.*\", it, flag)\ndef get_nesting_level(item: QTreeWidgetItem) -> int:\n    level = 1\n    current_parent = item.parent()\n    while current_parent is not None:\n        current_parent = current_parent.parent()\n        level += 1\n    return level",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "get_nesting_level",
+        "kind": 2,
+        "importPath": "src.support.other",
+        "description": "src.support.other",
+        "peekOfCode": "def get_nesting_level(item: QTreeWidgetItem) -> int:\n    level = 1\n    current_parent = item.parent()\n    while current_parent is not None:\n        current_parent = current_parent.parent()\n        level += 1\n    return level",
+        "detail": "src.support.other",
+        "documentation": {}
+    },
+    {
+        "label": "PathToFile",
+        "kind": 6,
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "peekOfCode": "class PathToFile:\n    def __init__(self, path: str) -> None:\n        self.path = path\n    def fullpath(self) -> str:\n        abspath = os.path.realpath(self.path)\n        dir_, name = os.path.dirname(abspath), os.path.basename(abspath)\n        return os.path.join(dir_, name)\n    def __str__(self) -> str:\n        return self.fullpath()\ndef join_path_to_file(temp_dir: str) -> Callable:",
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "join_path_to_file",
+        "kind": 2,
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "peekOfCode": "def join_path_to_file(temp_dir: str) -> Callable:\n    return lambda file_name: os.path.join(temp_dir, file_name)\ndef install_and_extract_files(response: requests.Response) -> list[str]:\n    \"\"\"Extracts and opens files from a zip archive.\n    Args:\n    ----\n        response (requests.Response): The response object containing the zip archive.\n    Returns:\n    -------\n        None.",
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "install_and_extract_files",
+        "kind": 2,
+        "importPath": "src.support.work_with_files",
+        "description": "src.support.work_with_files",
+        "peekOfCode": "def install_and_extract_files(response: requests.Response) -> list[str]:\n    \"\"\"Extracts and opens files from a zip archive.\n    Args:\n    ----\n        response (requests.Response): The response object containing the zip archive.\n    Returns:\n    -------\n        None.\n    \"\"\"\n    from src.storage import GlobalStateStorage",
+        "detail": "src.support.work_with_files",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "kind": 6,
+        "importPath": "src.api",
+        "description": "src.api",
+        "peekOfCode": "class Api:\n    __instance = None\n    def __new__(cls, *args, **kwargs):  # noqa: ANN204\n        if cls.__instance is None:\n            cls.__instance = super().__new__(cls)\n        return cls.__instance\n    def __init__(self) -> None:\n        self.server = SERVER\n        self.config = CONFIG\n        self.id = ID",
+        "detail": "src.api",
+        "documentation": {}
+    },
+    {
+        "label": "Builder",
+        "kind": 6,
+        "importPath": "src.builder",
+        "description": "src.builder",
+        "peekOfCode": "class Builder(UseUi):\n    def __init__(self, ui: Ui) -> None:\n        super().__init__(ui)\n        translator = Translate(CONFIG)\n        self.fill_manage_tree(translator)\n        self.fill_other_to_manage_tree(translator)\n        path = os.path.join(PathToFile(BASE_PATH).fullpath(), \"assets\\\\Icon.png\").replace(\"\\\\\", \"/\")\n        self.ui.icon.setStyleSheet(f\"border-image: url({path});\")\n        self.handle_selection_book: HandleSelectionBook | None = None\n        self.handle_selection_item: HandleSelectionItem | None = None",
+        "detail": "src.builder",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_PATH",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "BASE_PATH = Path(os.path.dirname(__file__)) / \"..\"\nenv = dotenv_values(BASE_PATH / \".env\")\nID = env.get(\"ID\")\nSERVER = env.get(\"SERVER\")\nTMP = env.get(\"TMP\", os.getenv(\"TMP\"))\nSEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "env = dotenv_values(BASE_PATH / \".env\")\nID = env.get(\"ID\")\nSERVER = env.get(\"SERVER\")\nTMP = env.get(\"TMP\", os.getenv(\"TMP\"))\nSEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ID",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "ID = env.get(\"ID\")\nSERVER = env.get(\"SERVER\")\nTMP = env.get(\"TMP\", os.getenv(\"TMP\"))\nSEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SERVER",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "SERVER = env.get(\"SERVER\")\nTMP = env.get(\"TMP\", os.getenv(\"TMP\"))\nSEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TMP",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "TMP = env.get(\"TMP\", os.getenv(\"TMP\"))\nSEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SEPARATOR",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "SEPARATOR = env.get(\"SPLIT_PARAGRAPH_SYMBOL\")\nNOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_ITEM",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "NOT_SELECTION_ITEM = \"Not selection item\"\nNOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NOT_SELECTION_BOOK",
+        "kind": 5,
+        "importPath": "src.settings",
+        "description": "src.settings",
+        "peekOfCode": "NOT_SELECTION_BOOK = \"Not selection book\"\nCONFIG: OrderedDict = requests.get(f\"{SERVER}/config\").json(object_pairs_hook=OrderedDict)",
+        "detail": "src.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalStateStorage",
+        "kind": 6,
+        "importPath": "src.storage",
+        "description": "src.storage",
+        "peekOfCode": "class GlobalStateStorage:\n    selection_item: SelectionItem | None = None\n    selection_book: Book | None = None\n    books: list[Book] = []\n    installed_files: list[str] = []",
+        "detail": "src.storage",
+        "documentation": {}
+    },
+    {
+        "label": "EventsTypes",
+        "kind": 6,
+        "importPath": "src.types",
+        "description": "src.types",
+        "peekOfCode": "class EventsTypes(Enum):\n    SELECT_ITEM = 0\n    SELECT_BOOK = 1",
+        "detail": "src.types",
+        "documentation": {}
+    },
+    {
+        "label": "UseUi",
+        "kind": 6,
+        "importPath": "src.useui",
+        "description": "src.useui",
+        "peekOfCode": "class UseUi:\n    def __init__(self, ui: Ui) -> None:\n        self.ui = ui",
+        "detail": "src.useui",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceWindow",
+        "kind": 6,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "class ChoiceWindow(QMainWindow):\n    def __init__(self, text: str, files: list[str]) -> None:\n        super().__init__()\n        self.ui = Ui_MainWindow()\n        self.ui.setupUi(self)\n        self.api = Api()\n        self.text = text\n        self.files = files\n        self.connect_()\n        self.show()",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceVideoWindow",
+        "kind": 6,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "class ChoiceVideoWindow(ChoiceWindow):\n    @staticmethod\n    def build_item(data: ItemData) -> QListWidgetItem:\n        item = QListWidgetItem()\n        item.setData(1, {\"url\": data[1]})\n        if is_youtube_url(data[1]):\n            video_title = YouTube(data[1]).title\n        else:\n            video_title = \"\"\n        item.setText(f\"Видео {data[0]}. {video_title}\")",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceFileWindow",
+        "kind": 6,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "class ChoiceFileWindow(ChoiceWindow):\n    @staticmethod\n    def build_item(data: ItemData) -> QListWidgetItem:\n        item = QListWidgetItem()\n        item.setData(1, {\"file\": data[1]})\n        item.setData(3, [])\n        item.setText(f\"Файл {data[0]}\")\n        return item\n    def view(self, item: QListWidgetItem) -> None:\n        if not item.data(3):",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ChoiceAnswerWindow",
+        "kind": 6,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "class ChoiceAnswerWindow(ChoiceFileWindow):\n    @staticmethod\n    def build_item(data: ItemData) -> QListWidgetItem:\n        item = QListWidgetItem()\n        item.setData(1, {\"file\": data[1]})\n        item.setData(3, [])\n        item.setText(f\"Решение (ответ) {data[0]}\")\n        return item",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "is_youtube_url",
+        "kind": 2,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "def is_youtube_url(url: str) -> bool:\n    \"\"\"\n    Check if the given URL is a YouTube URL.\n    :param url: A string representing the URL to be checked.\n    :type url: str\n    :return: True if the URL is a YouTube URL, False otherwise.\n    :rtype: bool\n    \"\"\"\n    is_youtube = re.findall(r\"youtube|youtu\\.be\", url)\n    if is_youtube:",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "ItemData",
+        "kind": 5,
+        "importPath": "ui.choice_video_or_answer.choice",
+        "description": "ui.choice_video_or_answer.choice",
+        "peekOfCode": "ItemData = namedtuple(\"ItemData\", [\"number\", \"file\"])\ndef is_youtube_url(url: str) -> bool:\n    \"\"\"\n    Check if the given URL is a YouTube URL.\n    :param url: A string representing the URL to be checked.\n    :type url: str\n    :return: True if the URL is a YouTube URL, False otherwise.\n    :rtype: bool\n    \"\"\"\n    is_youtube = re.findall(r\"youtube|youtu\\.be\", url)",
+        "detail": "ui.choice_video_or_answer.choice",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "description": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        if not MainWindow.objectName():\n            MainWindow.setObjectName(u\"MainWindow\")\n        MainWindow.resize(441, 320)\n        MainWindow.setStyleSheet(u\"font: 16pt \\\"Segoe UI\\\";\")\n        self.centralwidget = QWidget(MainWindow)\n        self.centralwidget.setObjectName(u\"centralwidget\")\n        self.verticalLayout = QVBoxLayout(self.centralwidget)\n        self.verticalLayout.setObjectName(u\"verticalLayout\")",
+        "detail": "ui.choice_video_or_answer.choice_video_or_answer_ui",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "ui.web_view.base",
+        "description": "ui.web_view.base",
+        "peekOfCode": "class View(QMainWindow):\n    def __init__(self, url: str | MyIter) -> None:\n        super().__init__()\n        self.ui = UiView()\n        self.ui.setupUi(self)\n        self.url: str | MyIter = url\n        if isinstance(self.url, str):\n            webbrowser.open_new_tab(url)\n            # self.ui.webEngineView.setUrl(QUrl(url))\n        elif it := url():",
+        "detail": "ui.web_view.base",
+        "documentation": {}
+    },
+    {
+        "label": "MyIter",
+        "kind": 5,
+        "importPath": "ui.web_view.base",
+        "description": "ui.web_view.base",
+        "peekOfCode": "MyIter = NewType(\"MyIter\", Callable)\nclass View(QMainWindow):\n    def __init__(self, url: str | MyIter) -> None:\n        super().__init__()\n        self.ui = UiView()\n        self.ui.setupUi(self)\n        self.url: str | MyIter = url\n        if isinstance(self.url, str):\n            webbrowser.open_new_tab(url)\n            # self.ui.webEngineView.setUrl(QUrl(url))",
+        "detail": "ui.web_view.base",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.web_view.web_view_ui",
+        "description": "ui.web_view.web_view_ui",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        if not MainWindow.objectName():\n            MainWindow.setObjectName(u\"MainWindow\")\n        MainWindow.resize(800, 600)\n        self.centralwidget = QWidget(MainWindow)\n        self.centralwidget.setObjectName(u\"centralwidget\")\n        self.gridLayout = QGridLayout(self.centralwidget)\n        self.gridLayout.setObjectName(u\"gridLayout\")\n        self.webEngineView = QWebEngineView(self.centralwidget)",
+        "detail": "ui.web_view.web_view_ui",
+        "documentation": {}
+    },
+    {
+        "label": "BookWidgetItem",
+        "kind": 6,
+        "importPath": "ui.custom_widgets",
+        "description": "ui.custom_widgets",
+        "peekOfCode": "class BookWidgetItem(QWidget):\n    def __init__(self, book: Book) -> None:\n        super().__init__()\n        self.setMaximumWidth(200)\n        self.setMaximumHeight(380)\n        self.vbl = QVBoxLayout()\n        self.book = book\n        self.api = Api()\n        self.book_image_label = self._create_book_image_label()\n        self.description_book = self._create_description_book_widget(book)",
+        "detail": "ui.custom_widgets",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.main_ui",
+        "description": "ui.main_ui",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        if not MainWindow.objectName():\n            MainWindow.setObjectName(u\"MainWindow\")\n        MainWindow.resize(1546, 917)\n        self.centralwidget = QWidget(MainWindow)\n        self.centralwidget.setObjectName(u\"centralwidget\")\n        self.centralwidget.setStyleSheet(u\"font: 16pt \\\"Segoe UI\\\";\")\n        self.verticalLayout = QVBoxLayout(self.centralwidget)\n        self.verticalLayout.setObjectName(u\"verticalLayout\")",
+        "detail": "ui.main_ui",
+        "documentation": {}
+    },
+    {
+        "label": "MathInSchool",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class MathInSchool(QMainWindow):\n    def __init__(self) -> None:\n        super().__init__()\n        self.moving_flag: bool = None\n        self.maximize_flag: bool = False\n        self.offset: QPoint = None\n        self.ui = Ui()\n        self.ui.setupUi(self)\n        self.setWindowFlags(Qt.FramelessWindowHint)\n        self.setAttribute(Qt.WA_TranslucentBackground)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main() -> None:\n    app = QApplication(sys.argv)\n    window = MathInSchool()\n    window.show()\n    app.exec()\nif __name__ == '__main__':\n    main()",
+        "detail": "main",
+        "documentation": {}
+    }
+]

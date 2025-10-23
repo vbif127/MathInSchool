@@ -2,9 +2,8 @@ import os
 import re
 from abc import abstractmethod
 from collections import namedtuple
-from tkinter import messagebox
 
-from PySide6.QtWidgets import QListWidgetItem, QMainWindow
+from PySide6.QtWidgets import QListWidgetItem, QMainWindow, QMessageBox
 from pytube import YouTube  # type: ignore
 
 from src.api import Api
@@ -64,11 +63,10 @@ class ChoiceWindow(QMainWindow):
         ...
 
     def connect_(self) -> None:
-        self.ui.fileLW.itemClicked.connect(self.view)
+        self.ui.fileLW.itemDoubleClicked.connect(self.view)
 
 
 class ChoiceVideoWindow(ChoiceWindow):
-
     @staticmethod
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
@@ -86,7 +84,6 @@ class ChoiceVideoWindow(ChoiceWindow):
 
 
 class ChoiceFileWindow(ChoiceWindow):
-
     @staticmethod
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
@@ -102,11 +99,11 @@ class ChoiceFileWindow(ChoiceWindow):
             received_files = item.data(3)
 
         if not received_files:
-            messagebox.showerror("Error", "Файл не найден")
+            QMessageBox.critical(None, "Error", "Файл не найден")
             self.close()
         for received_file in received_files:
             if not received_file:
-                messagebox.showerror("Error", "Не получилось загрузить файл")
+                QMessageBox.critical(None, "Error", "Не получилось загрузить файл")
                 continue
             if not item.data(3):
                 item.setData(3, item.data(3) + [received_file])
@@ -115,11 +112,10 @@ class ChoiceFileWindow(ChoiceWindow):
 
 
 class ChoiceAnswerWindow(ChoiceFileWindow):
-
     @staticmethod
     def build_item(data: ItemData) -> QListWidgetItem:
         item = QListWidgetItem()
         item.setData(1, {"file": data[1]})
         item.setData(3, [])
-        item.setText(f"Ответ(Решение) {data[0]}")
+        item.setText(f"Решение (ответ) {data[0]}")
         return item

@@ -40,7 +40,7 @@ class HandleSelectionBook(UseUi):
         if GlobalStateStorage.selection_book is None:
             raise NotSelectionBookError(NOT_SELECTION_BOOK)
 
-        self.ui.book_imgL.setStyleSheet(f"border-image: url({GlobalStateStorage.selection_book.image});")
+        self.ui.book_imgL.setStyleSheet(f"border-image: url({GlobalStateStorage.selection_book.image.path});")
         self.ui.book_description.setPlainText(GlobalStateStorage.selection_book.description)
 
     def connect(self) -> None:

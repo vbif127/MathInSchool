@@ -3,7 +3,7 @@ import requests
 from src.settings import CONFIG, ID, SERVER
 from src.support.active import SelectionItem
 from src.support.other import Json, Translate
-from src.support.work_with_files import PathToFile, install_and_extract_files
+from src.support.work_with_files import install_and_extract_files
 
 
 class Api:
@@ -24,8 +24,8 @@ class Api:
     def get_file(self, path: str) -> list[str] | list:
 
         response = requests.get(
-            f"{self.server}/file/{self.id}",
-            json={"path": path.replace("\\", "/")},
+            f"{self.server}/file",
+            json={"path": path},
         )
         try:
             response.raise_for_status()
@@ -39,7 +39,6 @@ class Api:
             active_item,
             book_identifier,
         )
-        print(f"{SERVER}/json/{active_item.root_dir}/{translated_item}/{translated_book_name}")
         response = requests.get(f"{SERVER}/json/{active_item.root_dir}/{translated_item}/{translated_book_name}")
 
         if response.status_code != 200:

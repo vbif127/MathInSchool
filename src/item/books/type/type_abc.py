@@ -35,15 +35,24 @@ class Content:
 class Image:
     def __init__(self, path: str):
         self.api = Api()
-        self.path = self.get_image(path)
+        self._path = path
 
     def get_image(self, path: str) -> str:
         image = self.api.get_file(path)
 
         if not image:
-            return os.path.join(PathToFile(BASE_PATH).fullpath(), 'default.png').replace("\\", "/")
+            return os.path.join(PathToFile(BASE_PATH).fullpath(), "assets\\default.png").replace("\\", "/")
 
         return image[0].replace("\\", "/")
+
+    @property
+    def path(self) -> str:
+        if not self.is_installed():
+            self._path = self.get_image(self._path)
+        return self._path
+
+    def is_installed(self) -> bool:
+        return os.path.exists(self._path)
 
     def __str__(self):
         return self.path

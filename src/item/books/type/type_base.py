@@ -1,4 +1,5 @@
 from collections import defaultdict
+
 from attrs import define, field
 
 from src.item.books.type.type_abc import BaseParagraphData, Book, Content, NumberText, ParagraphText, SubjectText
