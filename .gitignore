@@ -9,3 +9,4 @@ dist
 conf.json
 build
 *\__pycache__
+.vscode
